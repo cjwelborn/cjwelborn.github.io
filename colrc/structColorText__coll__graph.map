@@ -1,6 +1,0 @@
-<map id="ColorText" name="ColorText">
-<area shape="rect" id="node2" href="$colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. " alt="" coords="11,184,83,211"/>
-<area shape="rect" id="node3" href="$colr_8h.html#structColorValue" title="Holds a color type and it&#39;s value. " alt="" coords="5,95,89,121"/>
-<area shape="rect" id="node4" href="$colr_8h.html#structRGB" title="Container for RGB values. " alt="" coords="22,5,73,32"/>
-<area shape="rect" id="node5" href="$colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ..." alt="" coords="107,184,198,211"/>
-</map>
