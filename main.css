@@ -1,0 +1,106 @@
+body, table, div, p, dl {
+    background-color: #f1f1f1; /* white; */
+    color: #272822; /* black */
+    font-family: "Noto Sans", Roboto, sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+}
+
+a {
+    color: #2F2F2F;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited {
+    color: #3D3D3D;
+}
+
+#projects {
+    display: block;
+}
+
+#docs {
+    display: block;
+}
+
+.github-links {
+    display: block;
+    margin-left: 20px;
+}
+
+.github-link {
+    display: block;
+}
+
+.project-info {
+    border-color: #949494;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 2px 2px 3px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.project-name {
+    color: #0052ad;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 25%;
+}
+
+.project-name span {
+    display: inline;
+    text-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px;
+}
+
+.project-url {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.project-url:before {
+    color: #949494;
+    content: "\27a4"; /* "➤" */;
+}
+
+.project-desc {
+
+}
+
+.project-stats {
+    border-color: #949494;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.project-stat {
+    display: inline;
+    font-size: 0.75rem!important;
+}
+
+.project-stat-key {
+    display: inline;
+}
+
+.project-stat-value {
+    display: inline;
+    font-family: "DejaVu Sans Mono", "Source Code Pro", monospace;
+    font-weight: bold;
+}
