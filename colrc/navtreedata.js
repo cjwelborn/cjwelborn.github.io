@@ -2,21 +2,23 @@ var NAVTREE =
 [
   [ "ColrC", "index.html", [
     [ "Documentation", "index.html", [
-      [ "Getting Started", "index.html#autotoc_md9", [
-        [ "Including", "index.html#autotoc_md10", null ],
-        [ "Compiling", "index.html#autotoc_md11", null ],
-        [ "Files", "index.html#autotoc_md12", null ],
-        [ "Example Usage", "index.html#autotoc_md13", [
-          [ "Example Files", "index.html#autotoc_md14", null ]
+      [ "Getting Started", "index.html#autotoc_md10", [
+        [ "Including", "index.html#autotoc_md11", null ],
+        [ "Compiling", "index.html#autotoc_md12", null ],
+        [ "Files", "index.html#autotoc_md13", null ],
+        [ "Example Usage", "index.html#autotoc_md14", [
+          [ "Example Files", "index.html#autotoc_md15", null ]
         ] ],
-        [ "Why", "index.html#autotoc_md15", null ],
-        [ "Future", "index.html#autotoc_md16", null ]
+        [ "Why", "index.html#autotoc_md16", null ],
+        [ "Future", "index.html#autotoc_md17", null ]
       ] ]
     ] ],
     [ "Development", "development.html", "development" ],
     [ "Downloads", "downloads.html", [
-      [ "PDF", "downloads.html#autotoc_md6", null ],
-      [ "Source Files", "downloads.html#autotoc_md7", null ]
+      [ "Downloadable Files", "downloads.html#autotoc_md6", [
+        [ "PDF", "downloads.html#autotoc_md7", null ],
+        [ "Source Files", "downloads.html#autotoc_md8", null ]
+      ] ]
     ] ],
     [ "Tool", "tool.html", "tool" ],
     [ "Data Structures", "annotated.html", [
@@ -46,7 +48,7 @@ var NAVTREEINDEX =
 "ColorResult_example_8c-example.html",
 "colr_8h.html#a0605394ac51b9927ec4a71e99365028e",
 "colr_8h.html#a8a7703119ac7aeb47276700319e4b97a",
-"globals_func_r.html"
+"globals_func_f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
