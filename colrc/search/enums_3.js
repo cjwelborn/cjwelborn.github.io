@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stylevalue',['StyleValue',['../colr_8h.html#a85224ec2507f33b1985f4cdd0adfe0e6',1,'colr.h']]]
+  ['erasemethod',['EraseMethod',['../colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02',1,'colr.controls.h']]]
 ];

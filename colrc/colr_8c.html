@@ -39,7 +39,7 @@
   </td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ColrC
-   &#160;<span id="projectnumber">0.3.6</span>
+   &#160;<span id="projectnumber">0.3.7</span>
    </div>
    <div id="projectbrief">An easy to use C library for linux terminal colors/escape-codes.</div>
   </td>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('colr_8c.html','');});
 <div class="title">colr.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h3 class="version">(0.3.6)</h3>
+<h3 class="version">(0.3.7)</h3>
 <p>Implements everything in the <a class="el" href="colr_8h.html" title="Declarations for ColrC functions, enums, structs, etc. ">colr.h</a> header.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="colr_8h_source.html">colr.h</a>&quot;</code><br />
@@ -261,6 +261,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adf78eeb364553d130055d93e9892cd9c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#adf78eeb364553d130055d93e9892cd9c">ColorJustifyMethod_repr</a> (<a class="el" href="colr_8h.html#af1a3fe0b966f944fd659a98be170045f">ColorJustifyMethod</a> meth)</td></tr>
 <tr class="memdesc:adf78eeb364553d130055d93e9892cd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string (<code>char*</code>) representation for a ColorJustifyMethod.  <a href="#adf78eeb364553d130055d93e9892cd9c">More...</a><br /></td></tr>
 <tr class="separator:adf78eeb364553d130055d93e9892cd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c95a667cdcd05fd108ddf20b9a7328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *cres,...)</td></tr>
+<tr class="memdesc:ad4c95a667cdcd05fd108ddf20b9a7328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colorize a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, and return a new allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>.  <a href="#ad4c95a667cdcd05fd108ddf20b9a7328">More...</a><br /></td></tr>
+<tr class="separator:ad4c95a667cdcd05fd108ddf20b9a7328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b59e832f322e617a89ca14046cc41d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a5b59e832f322e617a89ca14046cc41d2">ColorResult_empty</a> (void)</td></tr>
 <tr class="memdesc:a5b59e832f322e617a89ca14046cc41d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> with <code>.result=NULL</code> and <code>.length=-1</code>, with the appropriate struct marker.  <a href="#a5b59e832f322e617a89ca14046cc41d2">More...</a><br /></td></tr>
 <tr class="separator:a5b59e832f322e617a89ca14046cc41d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,6 +273,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a27b70c6de9b2351424100bd742b1f1a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a27b70c6de9b2351424100bd742b1f1a8">ColorResult_free</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *p)</td></tr>
 <tr class="memdesc:a27b70c6de9b2351424100bd742b1f1a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free allocated memory for a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> and it's <code>.result</code> member.  <a href="#a27b70c6de9b2351424100bd742b1f1a8">More...</a><br /></td></tr>
 <tr class="separator:a27b70c6de9b2351424100bd742b1f1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5c106f8d2e83b007a3fd633c3097c18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#ac5c106f8d2e83b007a3fd633c3097c18">ColorResult_from_str</a> (const char *s)</td></tr>
+<tr class="memdesc:ac5c106f8d2e83b007a3fd633c3097c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a copy of a string, and creates a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> from it.  <a href="#ac5c106f8d2e83b007a3fd633c3097c18">More...</a><br /></td></tr>
+<tr class="separator:ac5c106f8d2e83b007a3fd633c3097c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91d92286745806229c0369c20edf641c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a91d92286745806229c0369c20edf641c">ColorResult_from_stra</a> (const char *s)</td></tr>
+<tr class="memdesc:a91d92286745806229c0369c20edf641c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a copy of a string, and creates an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> from it.  <a href="#a91d92286745806229c0369c20edf641c">More...</a><br /></td></tr>
+<tr class="separator:a91d92286745806229c0369c20edf641c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5fe635f26119c3a341b5dfe23abc97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#afd5fe635f26119c3a341b5dfe23abc97">ColorResult_is_ptr</a> (void *p)</td></tr>
 <tr class="memdesc:afd5fe635f26119c3a341b5dfe23abc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks a void pointer to see if it contains a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> struct.  <a href="#afd5fe635f26119c3a341b5dfe23abc97">More...</a><br /></td></tr>
 <tr class="separator:afd5fe635f26119c3a341b5dfe23abc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -300,6 +309,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ad4702d6ddc409a93a0b42c8f6141d2f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorText">ColorText</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#ad4702d6ddc409a93a0b42c8f6141d2f2">ColorText_from_values</a> (char *text,...)</td></tr>
 <tr class="memdesc:ad4702d6ddc409a93a0b42c8f6141d2f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> from 1 mandatory string (<code>char*</code>), and optional fore, back, and style args (pointers to ColorArgs).  <a href="#ad4702d6ddc409a93a0b42c8f6141d2f2">More...</a><br /></td></tr>
 <tr class="separator:ad4702d6ddc409a93a0b42c8f6141d2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bbb1f20ed69733be7750640ac297073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorText">ColorText</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a9bbb1f20ed69733be7750640ac297073">ColorText_from_valuesv</a> (char *text, va_list args)</td></tr>
+<tr class="memdesc:a9bbb1f20ed69733be7750640ac297073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> from 1 mandatory string (<code>char*</code>), and a <code>va_list</code> with optional fore, back, and style args (pointers to ColorArgs).  <a href="#a9bbb1f20ed69733be7750640ac297073">More...</a><br /></td></tr>
+<tr class="separator:a9bbb1f20ed69733be7750640ac297073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93f65430500d003575c547eb667330b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a93f65430500d003575c547eb667330b0">ColorText_has_arg</a> (<a class="el" href="colr_8h.html#structColorText">ColorText</a> ctext, <a class="el" href="colr_8h.html#structColorArg">ColorArg</a> carg)</td></tr>
 <tr class="memdesc:a93f65430500d003575c547eb667330b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> has a certain <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> value set.  <a href="#a93f65430500d003575c547eb667330b0">More...</a><br /></td></tr>
 <tr class="separator:a93f65430500d003575c547eb667330b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -426,9 +438,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a8963c87ccb1c39bdd4481bb81810ba78"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a8963c87ccb1c39bdd4481bb81810ba78">colr_empty_str</a> (void)</td></tr>
 <tr class="memdesc:a8963c87ccb1c39bdd4481bb81810ba78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates an empty string (<code>char*</code>).  <a href="#a8963c87ccb1c39bdd4481bb81810ba78">More...</a><br /></td></tr>
 <tr class="separator:a8963c87ccb1c39bdd4481bb81810ba78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008af1b6ab6db4d4dd98033471506f1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str</a> (const char *fmt,...)</td></tr>
+<tr class="memdesc:a008af1b6ab6db4d4dd98033471506f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate and format a string like <code>asprintf</code>, but wrap it in an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>.  <a href="#a008af1b6ab6db4d4dd98033471506f1e">More...</a><br /></td></tr>
+<tr class="separator:a008af1b6ab6db4d4dd98033471506f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197b7f21254d1729f30193905f8e237c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a197b7f21254d1729f30193905f8e237c">colr_free_argsv</a> (va_list args)</td></tr>
+<tr class="memdesc:a197b7f21254d1729f30193905f8e237c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free any ColrC objects (<a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer) passed in through a <code>va_list</code>.  <a href="#a197b7f21254d1729f30193905f8e237c">More...</a><br /></td></tr>
+<tr class="separator:a197b7f21254d1729f30193905f8e237c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67e72a18762c87886173dd0a0dc37887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a67e72a18762c87886173dd0a0dc37887">colr_free_re_matches</a> (regmatch_t **matches)</td></tr>
 <tr class="memdesc:a67e72a18762c87886173dd0a0dc37887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an array of allocated <code>regmatch_t</code>, like the return from <a class="el" href="colr_8c.html#a37cd9a8f2748629e68e9c41ffca557a9" title="Returns all regmatch_t matches for regex pattern in a string (char*). ">colr_re_matches()</a>.  <a href="#a67e72a18762c87886173dd0a0dc37887">More...</a><br /></td></tr>
 <tr class="separator:a67e72a18762c87886173dd0a0dc37887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e06ee5b32cd583c71ecff7d6c18270"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr</a> (void *p)</td></tr>
+<tr class="memdesc:a18e06ee5b32cd583c71ecff7d6c18270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a void pointer is a <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer.  <a href="#a18e06ee5b32cd583c71ecff7d6c18270">More...</a><br /></td></tr>
+<tr class="separator:a18e06ee5b32cd583c71ecff7d6c18270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a701126bd27c90fafa46152d9f9327b2f"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a701126bd27c90fafa46152d9f9327b2f">colr_join_array</a> (void *joinerp, void *ps)</td></tr>
 <tr class="memdesc:a701126bd27c90fafa46152d9f9327b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join an array of strings (<code>char*</code>), <code><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a></code>s, or <code><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a></code>s by another string (<code>char*</code>), <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>.  <a href="#a701126bd27c90fafa46152d9f9327b2f">More...</a><br /></td></tr>
 <tr class="separator:a701126bd27c90fafa46152d9f9327b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -489,6 +510,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a8b9f4cbe1e806316e063206dfb610476"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a8b9f4cbe1e806316e063206dfb610476">colr_str_has_codes</a> (const char *s)</td></tr>
 <tr class="memdesc:a8b9f4cbe1e806316e063206dfb610476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a string (<code>char*</code>) has ANSI escape codes in it.  <a href="#a8b9f4cbe1e806316e063206dfb610476">More...</a><br /></td></tr>
 <tr class="separator:a8b9f4cbe1e806316e063206dfb610476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f8caf33e6befb9b78958f5d24911ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a39f8caf33e6befb9b78958f5d24911ff">colr_str_has_ColorArg</a> (const char *s, <a class="el" href="colr_8h.html#structColorArg">ColorArg</a> *carg)</td></tr>
+<tr class="memdesc:a39f8caf33e6befb9b78958f5d24911ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether a string contains a specific color code.  <a href="#a39f8caf33e6befb9b78958f5d24911ff">More...</a><br /></td></tr>
+<tr class="separator:a39f8caf33e6befb9b78958f5d24911ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5a3149704b14b85a0236d9940fb4e7"><td class="memItemLeft" align="right" valign="top">ColrHash&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#adf5a3149704b14b85a0236d9940fb4e7">colr_str_hash</a> (const char *s)</td></tr>
 <tr class="memdesc:adf5a3149704b14b85a0236d9940fb4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hash a string using <a href="http://www.cse.yorku.ca/~oz/hash.html">djb2</a>.  <a href="#adf5a3149704b14b85a0236d9940fb4e7">More...</a><br /></td></tr>
 <tr class="separator:adf5a3149704b14b85a0236d9940fb4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -805,8 +829,8 @@ Variables</h2></td></tr>
 <tr class="memdesc:a3a3db0fb0c98d24ec072dfed5f88d717"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of <a class="el" href="colr_8h.html#structBasicInfo" title="Holds a known color name and it&#39;s BasicValue. ">BasicInfo</a> items, used with <a class="el" href="colr_8c.html#a4163ac65dca3e222525808b80a40b733" title="Convert named argument to an actual BasicValue enum value. ">BasicValue_from_str()</a>.  <a href="#a3a3db0fb0c98d24ec072dfed5f88d717">More...</a><br /></td></tr>
 <tr class="separator:a3a3db0fb0c98d24ec072dfed5f88d717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e51bb70ff49bcce2b23c75a83f099a7"><td class="memItemLeft" align="right" valign="top"><a id="a9e51bb70ff49bcce2b23c75a83f099a7"></a>
-const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a9e51bb70ff49bcce2b23c75a83f099a7">basic_names_len</a> = sizeof(<a class="el" href="colr_8c.html#a3a3db0fb0c98d24ec072dfed5f88d717">basic_names</a>) / sizeof(<a class="el" href="colr_8c.html#a3a3db0fb0c98d24ec072dfed5f88d717">basic_names</a>[0])</td></tr>
-<tr class="memdesc:a9e51bb70ff49bcce2b23c75a83f099a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of basic_names. <br /></td></tr>
+const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a9e51bb70ff49bcce2b23c75a83f099a7">basic_names_len</a> = (sizeof(<a class="el" href="colr_8c.html#a3a3db0fb0c98d24ec072dfed5f88d717">basic_names</a>) / sizeof(<a class="el" href="colr_8c.html#a3a3db0fb0c98d24ec072dfed5f88d717">basic_names</a>[0])) - 1</td></tr>
+<tr class="memdesc:a9e51bb70ff49bcce2b23c75a83f099a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of usable values basic_names. <br /></td></tr>
 <tr class="separator:a9e51bb70ff49bcce2b23c75a83f099a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7295537f3f6be454d92f57ed54766d7"><td class="memItemLeft" align="right" valign="top"><a id="aa7295537f3f6be454d92f57ed54766d7"></a>
 const <a class="el" href="colr_8h.html#structColorNameData">ColorNameData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#aa7295537f3f6be454d92f57ed54766d7">colr_name_data</a> []</td></tr>
@@ -830,15 +854,15 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:abffaf3629342a2b3e9cb7ea53c12c4f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of <a class="el" href="colr_8h.html#structExtendedInfo" title="Holds a known color name and it&#39;s ExtendedValue. ">ExtendedInfo</a>, used with <a class="el" href="colr_8c.html#a2e859d542a8aa0939e4f76b1f33cb5f8" title="Converts a known name, integer string (0-255), or a hex string (char*), into an ExtendedValue suitabl...">ExtendedValue_from_str()</a>.  <a href="#abffaf3629342a2b3e9cb7ea53c12c4f0">More...</a><br /></td></tr>
 <tr class="separator:abffaf3629342a2b3e9cb7ea53c12c4f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41163e87b52c4568025714dbc6ffcbfd"><td class="memItemLeft" align="right" valign="top"><a id="a41163e87b52c4568025714dbc6ffcbfd"></a>
-const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a41163e87b52c4568025714dbc6ffcbfd">extended_names_len</a> = sizeof(<a class="el" href="colr_8c.html#abffaf3629342a2b3e9cb7ea53c12c4f0">extended_names</a>) / sizeof(<a class="el" href="colr_8c.html#abffaf3629342a2b3e9cb7ea53c12c4f0">extended_names</a>[0])</td></tr>
-<tr class="memdesc:a41163e87b52c4568025714dbc6ffcbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of extended_names. <br /></td></tr>
+const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a41163e87b52c4568025714dbc6ffcbfd">extended_names_len</a> = (sizeof(<a class="el" href="colr_8c.html#abffaf3629342a2b3e9cb7ea53c12c4f0">extended_names</a>) / sizeof(<a class="el" href="colr_8c.html#abffaf3629342a2b3e9cb7ea53c12c4f0">extended_names</a>[0])) - 1</td></tr>
+<tr class="memdesc:a41163e87b52c4568025714dbc6ffcbfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of usable values in extended_names. <br /></td></tr>
 <tr class="separator:a41163e87b52c4568025714dbc6ffcbfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9303c010fd45eab23c7903d1175ae20a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="colr_8h.html#structStyleInfo">StyleInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a9303c010fd45eab23c7903d1175ae20a">style_names</a> []</td></tr>
 <tr class="memdesc:a9303c010fd45eab23c7903d1175ae20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of <a class="el" href="colr_8h.html#structStyleInfo" title="Holds a known style name and it&#39;s StyleValue. ">StyleInfo</a> items, used with StyleName_from_str().  <a href="#a9303c010fd45eab23c7903d1175ae20a">More...</a><br /></td></tr>
 <tr class="separator:a9303c010fd45eab23c7903d1175ae20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d274b3747f3ddd52d5e97cd7843388"><td class="memItemLeft" align="right" valign="top"><a id="a05d274b3747f3ddd52d5e97cd7843388"></a>
-const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a05d274b3747f3ddd52d5e97cd7843388">style_names_len</a> = sizeof(<a class="el" href="colr_8c.html#a9303c010fd45eab23c7903d1175ae20a">style_names</a>) / sizeof(<a class="el" href="colr_8c.html#a9303c010fd45eab23c7903d1175ae20a">style_names</a>[0])</td></tr>
-<tr class="memdesc:a05d274b3747f3ddd52d5e97cd7843388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of style_names. <br /></td></tr>
+const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a05d274b3747f3ddd52d5e97cd7843388">style_names_len</a> = (sizeof(<a class="el" href="colr_8c.html#a9303c010fd45eab23c7903d1175ae20a">style_names</a>) / sizeof(<a class="el" href="colr_8c.html#a9303c010fd45eab23c7903d1175ae20a">style_names</a>[0])) - 1</td></tr>
+<tr class="memdesc:a05d274b3747f3ddd52d5e97cd7843388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of usable values in style_names. <br /></td></tr>
 <tr class="separator:a05d274b3747f3ddd52d5e97cd7843388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -2031,7 +2055,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> struct with the appropriate <code>.value.type</code> member set for the value that was passed. For invalid types the <code>.value.type</code> member may be set to one of:<ul>
 <li>TYPE_INVALID</li>
 <li>TYPE_INVALID_EXT_RANGE</li>
-<li>TYPE_INVALID_RGB_RANGE</li>
+<li>TYPE_INVALID_RGB_RANGE </li>
 </ul>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> </dd></dl>
@@ -2123,7 +2147,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pointer is a <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, otherwise <code>false</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#ad4702d6ddc409a93a0b42c8f6141d2f2">ColorText_from_values()</a>, <a class="el" href="colr_8h.html#a880b39cd2ce9b622dbe7790a162d88f7">ColorText_set_values()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a9bbb1f20ed69733be7750640ac297073">ColorText_from_valuesv()</a>, <a class="el" href="colr_8h.html#a880b39cd2ce9b622dbe7790a162d88f7">ColorText_set_values()</a>, <a class="el" href="colr_8h.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
 
 </div>
 </div>
@@ -2291,6 +2315,8 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> was valid, otherwise <code>false</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a39f8caf33e6befb9b78958f5d24911ff">colr_str_has_ColorArg()</a>.</p>
 
 </div>
 </div>
@@ -2641,6 +2667,49 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="ad4c95a667cdcd05fd108ddf20b9a7328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c95a667cdcd05fd108ddf20b9a7328">&#9670;&nbsp;</a></span>ColorResult_Colr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* ColorResult_Colr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td>
+          <td class="paramname"><em>cres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Colorize a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, and return a new allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. </p>
+<p>This is like ColorText_from_value(), except it accepts an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> as the first argument.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cres</td><td>An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> to colorize. This will be released to create the new <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>One or more <a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">fore()</a>, <a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">back()</a>, or <a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">style()</a> arguments (ColorArgs). The last argument must be _ColrLastArg. The allocated ColorArgs will be <code>free()</code>'d. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <code>NULL</code> if <code>cres</code> is <code>NULL</code>.</p>
+<p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
+
+</div>
+</div>
 <a id="a5b59e832f322e617a89ca14046cc41d2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b59e832f322e617a89ca14046cc41d2">&#9670;&nbsp;</a></span>ColorResult_empty()</h2>
 
@@ -2661,7 +2730,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd>An "empty" (initialized) <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#af752035c362c7c9ddb2e7f2f2305d509">ColorResult_new()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a91d92286745806229c0369c20edf641c">ColorResult_from_stra()</a>, and <a class="el" href="colr_8h.html#af752035c362c7c9ddb2e7f2f2305d509">ColorResult_new()</a>.</p>
 
 </div>
 </div>
@@ -2730,7 +2799,68 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
+
+</div>
+</div>
+<a id="ac5c106f8d2e83b007a3fd633c3097c18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5c106f8d2e83b007a3fd633c3097c18">&#9670;&nbsp;</a></span>ColorResult_from_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> ColorResult_from_str </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates a copy of a string, and creates a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> from it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>The string to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. The <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> may be "empty" if <code>s</code> is <code>NULL</code>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
+
+</div>
+</div>
+<a id="a91d92286745806229c0369c20edf641c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d92286745806229c0369c20edf641c">&#9670;&nbsp;</a></span>ColorResult_from_stra()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* ColorResult_from_stra </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocates a copy of a string, and creates an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> from it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>The string to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. The <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> may be "empty" if <code>s</code> is <code>NULL</code>.</p>
+<p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8controls_8h.html#a539a34ed0f6d42af46f9eabed5dc96bb">Colr_cursor_hide()</a>, <a class="el" href="colr_8controls_8h.html#a26ca58da32fbb8b748be6d1f3be28991">Colr_cursor_show()</a>, <a class="el" href="colr_8controls_8h.html#a6f073609c3c701e1e94d57ffdf101b5c">Colr_erase_display()</a>, <a class="el" href="colr_8controls_8h.html#a5dbeee52b0527cf77523535dcb0cfb4f">Colr_erase_line()</a>, <a class="el" href="colr_8controls_8h.html#ad0a32ea7c15e5b40eda9d3277f7035d3">Colr_move_return()</a>, <a class="el" href="colr_8controls_8h.html#abf70c357e4cb15198020a6fbb29f09b8">Colr_pos_restore()</a>, and <a class="el" href="colr_8controls_8h.html#a5784c31cca2244df4005754b43185a5d">Colr_pos_save()</a>.</p>
 
 </div>
 </div>
@@ -2761,7 +2891,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pointer is a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, otherwise <code>false</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
 
 </div>
 </div>
@@ -2818,8 +2948,10 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. The <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> will be considered "empty" if <code>s</code> is <code>NULL</code> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#ac5c106f8d2e83b007a3fd633c3097c18">ColorResult_from_str()</a>, <a class="el" href="colr_8h.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str()</a>, <a class="el" href="colr_8controls_8h.html#a63f1bbac577f13c42ecc0358d179cbcd">Colr_move_back()</a>, <a class="el" href="colr_8controls_8h.html#ad6ed55c687b39c03f157796c9301557d">Colr_move_column()</a>, <a class="el" href="colr_8controls_8h.html#a199f6e456028c66c2429ec862f9ac5a0">Colr_move_down()</a>, <a class="el" href="colr_8controls_8h.html#a1d75da8b76f80e26cd02a31517a79861">Colr_move_forward()</a>, <a class="el" href="colr_8controls_8h.html#a0a2ecf5b0f26e46db5277e864b27bca5">Colr_move_next()</a>, <a class="el" href="colr_8controls_8h.html#ac43155350dda523b5aeedb50e02104fa">Colr_move_pos()</a>, <a class="el" href="colr_8controls_8h.html#a585d85a38f63bfae83026e36428f43c4">Colr_move_prev()</a>, <a class="el" href="colr_8controls_8h.html#a3808823bc9698483636970d6cdd02acb">Colr_move_up()</a>, <a class="el" href="colr_8controls_8h.html#ae2201d43b84b8060cfb5e00f32110f56">Colr_scroll_down()</a>, and <a class="el" href="colr_8controls_8h.html#ac0a2a79d8106fad5ad1ba8821b8591ae">Colr_scroll_up()</a>.</p>
 
 </div>
 </div>
@@ -2888,6 +3020,8 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a91d92286745806229c0369c20edf641c">ColorResult_from_stra()</a>, <a class="el" href="colr_8h.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str()</a>, <a class="el" href="colr_8controls_8h.html#a63f1bbac577f13c42ecc0358d179cbcd">Colr_move_back()</a>, <a class="el" href="colr_8controls_8h.html#ad6ed55c687b39c03f157796c9301557d">Colr_move_column()</a>, <a class="el" href="colr_8controls_8h.html#a199f6e456028c66c2429ec862f9ac5a0">Colr_move_down()</a>, <a class="el" href="colr_8controls_8h.html#a1d75da8b76f80e26cd02a31517a79861">Colr_move_forward()</a>, <a class="el" href="colr_8controls_8h.html#a0a2ecf5b0f26e46db5277e864b27bca5">Colr_move_next()</a>, <a class="el" href="colr_8controls_8h.html#ac43155350dda523b5aeedb50e02104fa">Colr_move_pos()</a>, <a class="el" href="colr_8controls_8h.html#a585d85a38f63bfae83026e36428f43c4">Colr_move_prev()</a>, <a class="el" href="colr_8controls_8h.html#a3808823bc9698483636970d6cdd02acb">Colr_move_up()</a>, <a class="el" href="colr_8controls_8h.html#ae2201d43b84b8060cfb5e00f32110f56">Colr_scroll_down()</a>, and <a class="el" href="colr_8controls_8h.html#ac0a2a79d8106fad5ad1ba8821b8591ae">Colr_scroll_up()</a>.</p>
+
 </div>
 </div>
 <a id="af5174a576892401ea59b737558f27d8b"></a>
@@ -2917,7 +3051,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd>A stringified-version if this <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, which happens to be the <code>.result</code> member. <em>If you free the result of this function, the original string used to create the <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> will be lost</em>. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
 
 </div>
 </div>
@@ -2941,7 +3075,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4702d6ddc409a93a0b42c8f6141d2f2">ColorText_from_values()</a>, and <a class="el" href="colr_8h.html#a880b39cd2ce9b622dbe7790a162d88f7">ColorText_set_values()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a9bbb1f20ed69733be7750640ac297073">ColorText_from_valuesv()</a>, and <a class="el" href="colr_8h.html#a880b39cd2ce9b622dbe7790a162d88f7">ColorText_set_values()</a>.</p>
 
 </div>
 </div>
@@ -3002,7 +3136,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a901e5738358a739629cc3aaccab3e73f">ColorText_free()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, and <a class="el" href="colr_8h.html#a901e5738358a739629cc3aaccab3e73f">ColorText_free()</a>.</p>
 
 </div>
 </div>
@@ -3036,12 +3170,53 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Text to colorize (a regular string). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>ColorArgs for fore, back, and style, in any order. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>ColorArgs for fore, back, and style, in any order. The last argument must be _ColrLastArg. The <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a> macro takes care of this for you. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> struct.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
+
+</div>
+</div>
+<a id="a9bbb1f20ed69733be7750640ac297073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bbb1f20ed69733be7750640ac297073">&#9670;&nbsp;</a></span>ColorText_from_valuesv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorText">ColorText</a> ColorText_from_valuesv </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Builds a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> from 1 mandatory string (<code>char*</code>), and a <code>va_list</code> with optional fore, back, and style args (pointers to ColorArgs). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">text</td><td>Text to colorize (a regular string). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td><code>va_list</code> with ColorArgs for fore, back, and style, in any order. The last argument must be _ColrLastArg. The <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a> macro takes care of this for you, and should be used for basic text colorization. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> struct.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, and <a class="el" href="colr_8h.html#ad4702d6ddc409a93a0b42c8f6141d2f2">ColorText_from_values()</a>.</p>
 
 </div>
 </div>
@@ -3171,7 +3346,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pointer is a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, otherwise <code>false</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
 
 </div>
 </div>
@@ -3382,7 +3557,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a73789c11eaeb5a36b5f97556103a108d">colr_str_replace_all_ColorText()</a>, <a class="el" href="colr_8h.html#aaee8d79a90917974ee4537705e34fd76">colr_str_replace_ColorText()</a>, <a class="el" href="colr_8h.html#a747e31fa3d8961e0bdd11eabd673accc">colr_str_replace_re_all_ColorText()</a>, <a class="el" href="colr_8h.html#ab8d6a10f70b435559656bbad0090d92d">colr_str_replace_re_ColorText()</a>, <a class="el" href="colr_8h.html#a4d954398333472c1436f9bc051f46392">colr_str_replace_re_match_ColorText()</a>, <a class="el" href="colr_8h.html#aa4fe38cc205cbd49b2f8477744574294">colr_str_replace_re_matches_ColorText()</a>, <a class="el" href="colr_8h.html#ab9c4a5c34b26473dc45f93ce2c66faf1">colr_str_replace_re_pat_all_ColorText()</a>, and <a class="el" href="colr_8h.html#a6f8b04b6d851f26304183d1111b8f0dc">colr_str_replace_re_pat_ColorText()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a73789c11eaeb5a36b5f97556103a108d">colr_str_replace_all_ColorText()</a>, <a class="el" href="colr_8h.html#aaee8d79a90917974ee4537705e34fd76">colr_str_replace_ColorText()</a>, <a class="el" href="colr_8h.html#a747e31fa3d8961e0bdd11eabd673accc">colr_str_replace_re_all_ColorText()</a>, <a class="el" href="colr_8h.html#ab8d6a10f70b435559656bbad0090d92d">colr_str_replace_re_ColorText()</a>, <a class="el" href="colr_8h.html#a4d954398333472c1436f9bc051f46392">colr_str_replace_re_match_ColorText()</a>, <a class="el" href="colr_8h.html#aa4fe38cc205cbd49b2f8477744574294">colr_str_replace_re_matches_ColorText()</a>, <a class="el" href="colr_8h.html#ab9c4a5c34b26473dc45f93ce2c66faf1">colr_str_replace_re_pat_all_ColorText()</a>, and <a class="el" href="colr_8h.html#a6f8b04b6d851f26304183d1111b8f0dc">colr_str_replace_re_pat_ColorText()</a>.</p>
 
 </div>
 </div>
@@ -4584,6 +4759,76 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a008af1b6ab6db4d4dd98033471506f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a008af1b6ab6db4d4dd98033471506f1e">&#9670;&nbsp;</a></span>Colr_fmt_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* Colr_fmt_str </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fmt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allocate and format a string like <code>asprintf</code>, but wrap it in an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. </p>
+<p>This is declared with <code>__attribute__((__format__(__printf__, 1, 2)))</code> so the compiler can check for bad format strings.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fmt</td><td>Format string for <code>asprintf</code>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>Other arguments for <code>asprintf</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <code>NULL</code> if <code>fmt</code> is <code>NULL</code>.</p>
+<p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+</dd></dl>
+<div class="examplecode"> <div class="examplecode-header"> <a href="#Colr_fmt_str-example" id="Colr_fmt_str-example" class="diamond-bullet">◆&#160;</a> Colr_fmt_str example: </div><div class="fragment"><div class="line"><span class="keywordtype">int</span> i = 2600;</div><div class="line"><span class="keywordtype">double</span> d = 1.337;</div><div class="line"><a class="code" href="colr_8h.html#af050c0377cbd1960fa057dc160da3c34">colr_puts</a>(<a class="code" href="colr_8c.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str</a>(<span class="stringliteral">&quot;&lt;%d&gt; &lt;%0.3f&gt;&quot;</span>, i, d));</div></div><!-- fragment --> </div> 
+</div>
+</div>
+<a id="a197b7f21254d1729f30193905f8e237c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a197b7f21254d1729f30193905f8e237c">&#9670;&nbsp;</a></span>colr_free_argsv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void colr_free_argsv </td>
+          <td>(</td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Free any ColrC objects (<a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer) passed in through a <code>va_list</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>The <code>va_list</code> with ColrC objects (<a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer). The last argument must be <code>_ColrLastArg</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>.</p>
+
+</div>
+</div>
 <a id="a67e72a18762c87886173dd0a0dc37887"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67e72a18762c87886173dd0a0dc37887">&#9670;&nbsp;</a></span>colr_free_re_matches()</h2>
 
@@ -4609,6 +4854,35 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 
 <p class="reference">Referenced by <a class="el" href="colr_8h.html#afd19623913d27e2d9a5af3496a478c2b">colr_str_replace_re_pat_all()</a>.</p>
+
+</div>
+</div>
+<a id="a18e06ee5b32cd583c71ecff7d6c18270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e06ee5b32cd583c71ecff7d6c18270">&#9670;&nbsp;</a></span>colr_is_colr_ptr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool colr_is_colr_ptr </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether a void pointer is a <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>A pointer to a possible ColrC object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>p</code> is a <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer, otherwise <code>false</code>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a197b7f21254d1729f30193905f8e237c">colr_free_argsv()</a>.</p>
 
 </div>
 </div>
@@ -5332,6 +5606,8 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>On success, a pointer to dest is returned.</dd></dl>
 <div class="examplecode"> <div class="examplecode-header"> <a href="#colr_str_copy-example" id="colr_str_copy-example" class="diamond-bullet">◆&#160;</a> colr_str_copy example: </div><div class="fragment"><div class="line"><span class="keywordtype">char</span>* s = <span class="stringliteral">&quot;testing&quot;</span>;</div><div class="line"><span class="keywordtype">size_t</span> length = strlen(s);</div><div class="line"><span class="keywordtype">char</span>* dest = malloc(length + 1);</div><div class="line"></div><div class="line"><span class="comment">// Copy the entire string:</span></div><div class="line"><a class="code" href="colr_8c.html#a4fb3c15e839f5c16d3e7cd001d32aee6">colr_str_copy</a>(dest, s, length);</div><div class="line">assert(strcmp(dest, <span class="stringliteral">&quot;testing&quot;</span>) == 0);</div><div class="line">printf(<span class="stringliteral">&quot;Copied: %s\n&quot;</span>, dest);</div><div class="line"></div><div class="line"><span class="comment">// Copy only 4 bytes:</span></div><div class="line"><a class="code" href="colr_8c.html#a4fb3c15e839f5c16d3e7cd001d32aee6">colr_str_copy</a>(dest, s, 4);</div><div class="line">assert(strcmp(dest, <span class="stringliteral">&quot;test&quot;</span>) == 0);</div><div class="line">printf(<span class="stringliteral">&quot;Truncated: %s\n&quot;</span>, dest);</div><div class="line"></div><div class="line"><span class="comment">// String gets truncated when dest is too small:</span></div><div class="line"><a class="code" href="colr_8c.html#a4fb3c15e839f5c16d3e7cd001d32aee6">colr_str_copy</a>(dest, <span class="stringliteral">&quot;this is too long.&quot;</span>, length);</div><div class="line">assert(strcmp(dest, <span class="stringliteral">&quot;this is&quot;</span>) == 0);</div><div class="line">assert(dest[length] == <span class="charliteral">&#39;\0&#39;</span>);</div><div class="line">printf(<span class="stringliteral">&quot;Truncated: %s\n&quot;</span>, dest);</div><div class="line">free(dest);</div></div><!-- fragment --> </div> 
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a91d92286745806229c0369c20edf641c">ColorResult_from_stra()</a>.</p>
+
 </div>
 </div>
 <a id="a7dd712bd8253271f0c88158db791c8bf"></a>
@@ -5463,6 +5739,44 @@ False if either is NULL, or the string doesn't end with the suffix. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the string has at least one escape code, otherwise <code>false</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8c.html#a85b2971301b5247769b08f5ed08564fb" title="Determines if a string (char*) is composed entirely of escape codes. ">colr_str_is_codes</a> </dd></dl>
 
+</div>
+</div>
+<a id="a39f8caf33e6befb9b78958f5d24911ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39f8caf33e6befb9b78958f5d24911ff">&#9670;&nbsp;</a></span>colr_str_has_ColorArg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool colr_str_has_ColorArg </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorArg">ColorArg</a> *&#160;</td>
+          <td class="paramname"><em>carg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines whether a string contains a specific color code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>The string to check. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">carg</td><td>The <a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">fore()</a>, <a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">back()</a>, or <a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">style()</a> <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> to check for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the string contains the escape codes formed by the <code>ColorArg*</code> given, otherwise <code>false</code>. If <code>s</code> is <code>NULL</code>/empty, or <code>carg</code> is <code>NULL</code>/empty, this will return <code>false</code>. </dd></dl>
+<div class="examplecode"> <div class="examplecode-header"> <a href="#colr_str_has_ColorArg-example" id="colr_str_has_ColorArg-example" class="diamond-bullet">◆&#160;</a> colr_str_has_ColorArg example: </div><div class="fragment"><div class="line"><a class="code" href="colr_8h.html#structColorArg">ColorArg</a>* forered = <a class="code" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f">fore</a>(RED);</div><div class="line"><span class="keywordtype">char</span>* s = <a class="code" href="colr_8h.html#a753093cd4c872eed4b77feaa7816212b">colr</a>(<span class="stringliteral">&quot;Testing&quot;</span>, <a class="code" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f">fore</a>(RED));</div><div class="line"><span class="keywordflow">if</span> (<a class="code" href="colr_8c.html#a39f8caf33e6befb9b78958f5d24911ff">colr_str_has_ColorArg</a>(s, forered)) {</div><div class="line">    puts(<span class="stringliteral">&quot;Yep, there&#39;s a fore:red in there.&quot;</span>);</div><div class="line">} <span class="keywordflow">else</span> {</div><div class="line">    puts(<span class="stringliteral">&quot;Hmmm...no red?&quot;</span>);</div><div class="line">}</div><div class="line"><span class="comment">// That ColorArg was allocated, free() it.</span></div><div class="line"><a class="code" href="colr_8h.html#a76eae619668e01987653932a7492fd94">colr_free</a>(forered);</div><div class="line"></div><div class="line"><a class="code" href="colr_8h.html#structColorArg">ColorArg</a>* backblue = <a class="code" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8">back</a>(BLUE);</div><div class="line"><span class="keywordflow">if</span> (<a class="code" href="colr_8c.html#a39f8caf33e6befb9b78958f5d24911ff">colr_str_has_ColorArg</a>(s, backblue)) {</div><div class="line">    fprintf(stderr, <span class="stringliteral">&quot;Illegal back:blue found in a red string!\n&quot;</span>);</div><div class="line">}</div><div class="line"><span class="comment">// Free this one too.</span></div><div class="line"><span class="comment">// If it was used inside of a colr/Colr macro call, we wouldn&#39;t have to do this.</span></div><div class="line"><a class="code" href="colr_8h.html#a76eae619668e01987653932a7492fd94">colr_free</a>(backblue);</div><div class="line"></div><div class="line"><span class="comment">// Free the string we created to test with.</span></div><div class="line">free(s);</div></div><!-- fragment --> </div> 
 </div>
 </div>
 <a id="adf5a3149704b14b85a0236d9940fb4e7"></a>
@@ -9887,7 +10201,7 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {<span class="stringliteral">&quot;reset&quot;</span>, RESET},</div><div class="line">    {<span class="stringliteral">&quot;none&quot;</span>, RESET},</div><div class="line">    {<span class="stringliteral">&quot;black&quot;</span>, BLACK},</div><div class="line">    {<span class="stringliteral">&quot;blue&quot;</span>, BLUE},</div><div class="line">    {<span class="stringliteral">&quot;cyan&quot;</span>, CYAN},</div><div class="line">    {<span class="stringliteral">&quot;green&quot;</span>, GREEN},</div><div class="line">    {<span class="stringliteral">&quot;magenta&quot;</span>, MAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;red&quot;</span>, RED},</div><div class="line">    {<span class="stringliteral">&quot;white&quot;</span>, WHITE},</div><div class="line">    {<span class="stringliteral">&quot;normal&quot;</span>, WHITE},</div><div class="line">    {<span class="stringliteral">&quot;yellow&quot;</span>, YELLOW},</div><div class="line">    {<span class="stringliteral">&quot;lightblack&quot;</span>, LIGHTBLACK},</div><div class="line">    {<span class="stringliteral">&quot;lightblue&quot;</span>, LIGHTBLUE},</div><div class="line">    {<span class="stringliteral">&quot;lightcyan&quot;</span>, LIGHTCYAN},</div><div class="line">    {<span class="stringliteral">&quot;lightgreen&quot;</span>, LIGHTGREEN},</div><div class="line">    {<span class="stringliteral">&quot;lightmagenta&quot;</span>, LIGHTMAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;lightred&quot;</span>, LIGHTRED},</div><div class="line">    {<span class="stringliteral">&quot;lightwhite&quot;</span>, LIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;lightnormal&quot;</span>, LIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;lightyellow&quot;</span>, LIGHTYELLOW},</div><div class="line">}</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {<span class="stringliteral">&quot;reset&quot;</span>, RESET},</div><div class="line">    {<span class="stringliteral">&quot;none&quot;</span>, RESET},</div><div class="line">    {<span class="stringliteral">&quot;black&quot;</span>, BLACK},</div><div class="line">    {<span class="stringliteral">&quot;blue&quot;</span>, BLUE},</div><div class="line">    {<span class="stringliteral">&quot;cyan&quot;</span>, CYAN},</div><div class="line">    {<span class="stringliteral">&quot;green&quot;</span>, GREEN},</div><div class="line">    {<span class="stringliteral">&quot;magenta&quot;</span>, MAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;red&quot;</span>, RED},</div><div class="line">    {<span class="stringliteral">&quot;white&quot;</span>, WHITE},</div><div class="line">    {<span class="stringliteral">&quot;normal&quot;</span>, WHITE},</div><div class="line">    {<span class="stringliteral">&quot;yellow&quot;</span>, YELLOW},</div><div class="line">    {<span class="stringliteral">&quot;lightblack&quot;</span>, LIGHTBLACK},</div><div class="line">    {<span class="stringliteral">&quot;lightblue&quot;</span>, LIGHTBLUE},</div><div class="line">    {<span class="stringliteral">&quot;lightcyan&quot;</span>, LIGHTCYAN},</div><div class="line">    {<span class="stringliteral">&quot;lightgreen&quot;</span>, LIGHTGREEN},</div><div class="line">    {<span class="stringliteral">&quot;lightmagenta&quot;</span>, LIGHTMAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;lightred&quot;</span>, LIGHTRED},</div><div class="line">    {<span class="stringliteral">&quot;lightwhite&quot;</span>, LIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;lightnormal&quot;</span>, LIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;lightyellow&quot;</span>, LIGHTYELLOW},</div><div class="line">    {NULL, RESET},</div><div class="line">}</div></div><!-- fragment -->
 <p>An array of <a class="el" href="colr_8h.html#structBasicInfo" title="Holds a known color name and it&#39;s BasicValue. ">BasicInfo</a> items, used with <a class="el" href="colr_8c.html#a4163ac65dca3e222525808b80a40b733" title="Convert named argument to an actual BasicValue enum value. ">BasicValue_from_str()</a>. </p>
 
 </div>
@@ -9905,8 +10219,10 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
 </div><div class="memdoc">
 
 <p>Integer to test for the presence of the "escaped output modifier" in colr_printf_handler. </p>
-<p>This is set in colr_printf_register. </p>
-
+<p>It is used to trigger "escaped output mode" when printing ColrC objects, where the color codes are escaped so you can see what they look like (instead of affecting the terminal).</p>
+<p>The character used as the "escaped output modifier" is COLR_FMT_MOD_ESC, from <a class="el" href="colr_8h.html" title="Declarations for ColrC functions, enums, structs, etc. ">colr.h</a>.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This is for ColrC only. You should have no reason to use or modify this variable.</dd></dl>
+<p>This is set in colr_printf_register when the modifier is registered. On a successful call to register_printf_modifier, it will be a positive number representing the bit set in the USER field in 'struct printf_info'. So later on, in <a class="el" href="colr_8c.html#a34c359a48f811316d765b7abef1ea8f4" title="Handles printing with printf for Colr objects. ">colr_printf_handler()</a>: </p><div class="fragment"><div class="line">using_escape_modifier = (info-&gt;user &amp; <a class="code" href="colr_8c.html#a62b38c28aba614d1bd1706d6099df0e6">colr_printf_esc_mod</a>);</div></div><!-- fragment --> 
 <p class="reference">Referenced by <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, and <a class="el" href="colr_8h.html#aaaf134ca9a2188d83171fe91948354d9">colr_printf_register()</a>.</p>
 
 </div>
@@ -9942,7 +10258,7 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {<span class="stringliteral">&quot;xred&quot;</span>, XRED},</div><div class="line">    {<span class="stringliteral">&quot;xgreen&quot;</span>, XGREEN},</div><div class="line">    {<span class="stringliteral">&quot;xyellow&quot;</span>, XYELLOW},</div><div class="line">    {<span class="stringliteral">&quot;xblue&quot;</span>, XBLUE},</div><div class="line">    {<span class="stringliteral">&quot;xmagenta&quot;</span>, XMAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;xcyan&quot;</span>, XCYAN},</div><div class="line">    {<span class="stringliteral">&quot;xwhite&quot;</span>, XWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xnormal&quot;</span>, XWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xlightred&quot;</span>, XLIGHTRED},</div><div class="line">    {<span class="stringliteral">&quot;xlightgreen&quot;</span>, XLIGHTGREEN},</div><div class="line">    {<span class="stringliteral">&quot;xlightyellow&quot;</span>, XLIGHTYELLOW},</div><div class="line">    {<span class="stringliteral">&quot;xlightblack&quot;</span>, XLIGHTBLACK},</div><div class="line">    {<span class="stringliteral">&quot;xlightblue&quot;</span>, XLIGHTBLUE},</div><div class="line">    {<span class="stringliteral">&quot;xlightmagenta&quot;</span>, XLIGHTMAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;xlightwhite&quot;</span>, XLIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xlightnormal&quot;</span>, XLIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xlightcyan&quot;</span>, XLIGHTCYAN},</div><div class="line">}</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    {<span class="stringliteral">&quot;xred&quot;</span>, XRED},</div><div class="line">    {<span class="stringliteral">&quot;xgreen&quot;</span>, XGREEN},</div><div class="line">    {<span class="stringliteral">&quot;xyellow&quot;</span>, XYELLOW},</div><div class="line">    {<span class="stringliteral">&quot;xblue&quot;</span>, XBLUE},</div><div class="line">    {<span class="stringliteral">&quot;xmagenta&quot;</span>, XMAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;xcyan&quot;</span>, XCYAN},</div><div class="line">    {<span class="stringliteral">&quot;xwhite&quot;</span>, XWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xnormal&quot;</span>, XWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xlightred&quot;</span>, XLIGHTRED},</div><div class="line">    {<span class="stringliteral">&quot;xlightgreen&quot;</span>, XLIGHTGREEN},</div><div class="line">    {<span class="stringliteral">&quot;xlightyellow&quot;</span>, XLIGHTYELLOW},</div><div class="line">    {<span class="stringliteral">&quot;xlightblack&quot;</span>, XLIGHTBLACK},</div><div class="line">    {<span class="stringliteral">&quot;xlightblue&quot;</span>, XLIGHTBLUE},</div><div class="line">    {<span class="stringliteral">&quot;xlightmagenta&quot;</span>, XLIGHTMAGENTA},</div><div class="line">    {<span class="stringliteral">&quot;xlightwhite&quot;</span>, XLIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xlightnormal&quot;</span>, XLIGHTWHITE},</div><div class="line">    {<span class="stringliteral">&quot;xlightcyan&quot;</span>, XLIGHTCYAN},</div><div class="line">    {NULL, RESET},</div><div class="line">}</div></div><!-- fragment -->
 <p>An array of <a class="el" href="colr_8h.html#structExtendedInfo" title="Holds a known color name and it&#39;s ExtendedValue. ">ExtendedInfo</a>, used with <a class="el" href="colr_8c.html#a2e859d542a8aa0939e4f76b1f33cb5f8" title="Converts a known name, integer string (0-255), or a hex string (char*), into an ExtendedValue suitabl...">ExtendedValue_from_str()</a>. </p>
 
 </div>
@@ -9958,7 +10274,7 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    </div><div class="line">    </div><div class="line">    {<span class="stringliteral">&quot;reset&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;none&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;resetall&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;reset-all&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;reset_all&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;bold&quot;</span>, BRIGHT},</div><div class="line">    {<span class="stringliteral">&quot;bright&quot;</span>, BRIGHT},</div><div class="line">    {<span class="stringliteral">&quot;dim&quot;</span>, DIM},</div><div class="line">    {<span class="stringliteral">&quot;italic&quot;</span>, ITALIC},</div><div class="line">    {<span class="stringliteral">&quot;underline&quot;</span>, UNDERLINE},</div><div class="line">    {<span class="stringliteral">&quot;flash&quot;</span>, FLASH},</div><div class="line">    {<span class="stringliteral">&quot;highlight&quot;</span>, HIGHLIGHT},</div><div class="line">    {<span class="stringliteral">&quot;normal&quot;</span>, NORMAL},</div><div class="line">    {<span class="stringliteral">&quot;strikethru&quot;</span>, STRIKETHRU},</div><div class="line">    {<span class="stringliteral">&quot;strike&quot;</span>, STRIKETHRU},</div><div class="line">    {<span class="stringliteral">&quot;strikethrough&quot;</span>, STRIKETHRU},</div><div class="line">    {<span class="stringliteral">&quot;frame&quot;</span>, FRAME},</div><div class="line">    {<span class="stringliteral">&quot;encircle&quot;</span>, ENCIRCLE},</div><div class="line">    {<span class="stringliteral">&quot;circle&quot;</span>, ENCIRCLE},</div><div class="line">    {<span class="stringliteral">&quot;overline&quot;</span>, OVERLINE},</div><div class="line">}</div></div><!-- fragment -->
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div><div class="line">    </div><div class="line">    </div><div class="line">    {<span class="stringliteral">&quot;reset&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;none&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;resetall&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;reset-all&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;reset_all&quot;</span>, RESET_ALL},</div><div class="line">    {<span class="stringliteral">&quot;bold&quot;</span>, BRIGHT},</div><div class="line">    {<span class="stringliteral">&quot;bright&quot;</span>, BRIGHT},</div><div class="line">    {<span class="stringliteral">&quot;dim&quot;</span>, DIM},</div><div class="line">    {<span class="stringliteral">&quot;italic&quot;</span>, ITALIC},</div><div class="line">    {<span class="stringliteral">&quot;underline&quot;</span>, UNDERLINE},</div><div class="line">    {<span class="stringliteral">&quot;flash&quot;</span>, FLASH},</div><div class="line">    {<span class="stringliteral">&quot;highlight&quot;</span>, HIGHLIGHT},</div><div class="line">    {<span class="stringliteral">&quot;normal&quot;</span>, NORMAL},</div><div class="line">    {<span class="stringliteral">&quot;strikethru&quot;</span>, STRIKETHRU},</div><div class="line">    {<span class="stringliteral">&quot;strike&quot;</span>, STRIKETHRU},</div><div class="line">    {<span class="stringliteral">&quot;strikethrough&quot;</span>, STRIKETHRU},</div><div class="line">    {<span class="stringliteral">&quot;frame&quot;</span>, FRAME},</div><div class="line">    {<span class="stringliteral">&quot;encircle&quot;</span>, ENCIRCLE},</div><div class="line">    {<span class="stringliteral">&quot;circle&quot;</span>, ENCIRCLE},</div><div class="line">    {<span class="stringliteral">&quot;overline&quot;</span>, OVERLINE},</div><div class="line">    {NULL, RESET_ALL},</div><div class="line">}</div></div><!-- fragment -->
 <p>An array of <a class="el" href="colr_8h.html#structStyleInfo" title="Holds a known style name and it&#39;s StyleValue. ">StyleInfo</a> items, used with StyleName_from_str(). </p>
 
 </div>
@@ -9978,7 +10294,7 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
     </li>
     <!-- This actually comes *before* the "generated by" msg, because of float. -->
     <li class="footer">
-        ColrC v.0.3.6
+        ColrC v.0.3.7
     </li>
   </ul>
 </div>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['start',['START',['../colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02a13d000b4d7dc70d90239b7430d1eb6b2',1,'colr.controls.h']]],
   ['style',['style',['../colr_8h.html#aa9f47920503d771d3bd80435b3ef2d6f',1,'ColorText::style()'],['../colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662',1,'style():&#160;colr.h']]],
   ['style_5farg',['style_arg',['../colr_8h.html#a53683a9e279942578e46768be25587d0',1,'colr.h']]],
   ['style_5flen',['STYLE_LEN',['../colr_8h.html#ac83d14a355d35b7af90deb99ad3b7601',1,'colr.h']]],

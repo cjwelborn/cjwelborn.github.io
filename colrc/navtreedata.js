@@ -36,6 +36,7 @@ var NAVTREE =
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ],
@@ -46,9 +47,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "ColorResult_example_8c-example.html",
-"colr_8h.html#a0605394ac51b9927ec4a71e99365028e",
-"colr_8h.html#a8a7703119ac7aeb47276700319e4b97a",
-"globals_func_f.html"
+"colr_8c.html#afd19623913d27e2d9a5af3496a478c2b",
+"colr_8h.html#a6e52b69648464f974dad9a620097ca43",
+"colr_8h.html#afa991b64a363bd5e6f1a722ed0759338"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,5 +1,9 @@
 var searchData=
 [
+  ['all',['ALL',['../colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02ab1d5eac4b1dca480c8056eaea7663b7a',1,'colr.controls.h']]],
+  ['all_5ferase',['ALL_ERASE',['../colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02a39788cd8bc1c3b9d044299bb5ecbb5a3',1,'colr.controls.h']]],
+  ['all_5fmove',['ALL_MOVE',['../colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02af63e056d05216f0d832afef15c3588a7',1,'colr.controls.h']]],
+  ['all_5fmove_5ferase',['ALL_MOVE_ERASE',['../colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02ac8641f564b95944dccc35a9f44468eb1',1,'colr.controls.h']]],
   ['alloc_5fbasic',['alloc_basic',['../colr_8h.html#ab7f29d345901a016f81f020ca4326c61',1,'colr.h']]],
   ['alloc_5fextended',['alloc_extended',['../colr_8h.html#a27c2b2b2835220a22a3b02e18febda40',1,'colr.h']]],
   ['alloc_5frgb',['alloc_rgb',['../colr_8h.html#ade4f7e3d0a7c1d9b991b0a33a995d6e5',1,'colr.h']]],

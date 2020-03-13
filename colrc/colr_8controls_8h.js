@@ -3,13 +3,16 @@ var colr_8controls_8h =
     [ "colr_control", "colr_8controls_8h.html#a50658b3c2a1f289252458df069e83da4", null ],
     [ "COLR_ESC", "colr_8controls_8h.html#a62c073000703fb64f6f083dc42f60d99", null ],
     [ "COLR_ESC_LEN", "colr_8controls_8h.html#a15dc9dbad86894848f830e7a75c19036", null ],
+    [ "colr_print_inplace", "colr_8controls_8h.html#af2adceb7152f4c036651491d0eb89da8", null ],
+    [ "colr_print_overwrite", "colr_8controls_8h.html#af323cb5520b936ba25b002e3d24cdea3", null ],
     [ "EraseMethod_to_str", "colr_8controls_8h.html#ae88850b538cc01f9bb22a308f1dec261", null ],
     [ "EraseMethod", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02", [
       [ "END", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02adc6f24fd6915a3f2786a1b7045406924", null ],
       [ "START", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02a13d000b4d7dc70d90239b7430d1eb6b2", null ],
       [ "ALL_MOVE", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02af63e056d05216f0d832afef15c3588a7", null ],
       [ "ALL_ERASE", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02a39788cd8bc1c3b9d044299bb5ecbb5a3", null ],
-      [ "ALL_MOVE_ERASE", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02ac8641f564b95944dccc35a9f44468eb1", null ]
+      [ "ALL_MOVE_ERASE", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02ac8641f564b95944dccc35a9f44468eb1", null ],
+      [ "ALL", "colr_8controls_8h.html#a191a8225b0c30ccda201fb274522ec02ab1d5eac4b1dca480c8056eaea7663b7a", null ]
     ] ],
     [ "Colr_cursor_hide", "colr_8controls_8h.html#a539a34ed0f6d42af46f9eabed5dc96bb", null ],
     [ "Colr_cursor_show", "colr_8controls_8h.html#a26ca58da32fbb8b748be6d1f3be28991", null ],
