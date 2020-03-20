@@ -105,79 +105,79 @@ $(document).ready(function(){initNavTree('tools.html','');});
 ColrC Tools</h1>
 <p>There are several scripts/tools in the <code>./tools</code> directory that aid in development. Some of them were created specifically for <code>make</code> targets, and some are used for inspecting the state of ColrC. All of them can be used as standalone commands, and all of them support the <code>-h</code>/<code>--help</code> options.</p>
 <ul>
-<li><code>examples/run_examples.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ examples/run_examples.sh"><code>examples/run_examples.sh</code></a><ul>
 <li>Run examples, and run <code>memcheck</code> on the examples.</li>
 </ul>
 </li>
-<li><code>test/run_tests.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ test/run_tests.sh"><code>test/run_tests.sh</code></a><ul>
 <li>Run tests, <code>memcheck</code> examples and the <code>colrc</code> tool.</li>
 </ul>
 </li>
-<li><code>clean.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/clean.sh"><code>clean.sh</code></a><ul>
 <li>Implements the <code>clean</code> make targets.</li>
 </ul>
 </li>
-<li><code>cppcheck_errors.py</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/cppcheck_errors.py"><code>cppcheck_errors.py</code></a><ul>
 <li>Lists all possible <code>cppcheck</code> errors/warnings, with filtering options.</li>
 </ul>
 </li>
-<li><code>cppcheck_run.py</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/cppcheck_run.py"><code>cppcheck_run.py</code></a><ul>
 <li>Run <code>cppcheck</code>, generate HTML reports for ColrC.</li>
 </ul>
 </li>
-<li><code>find_python.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/find_python.sh"><code>find_python.sh</code></a><ul>
 <li>Locate and report a specific python executable by version.</li>
 </ul>
 </li>
-<li><code>gen_coverage_html.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/gen_coverage_html.sh"><code>gen_coverage_html.sh</code></a><ul>
 <li>Uses <code>lcov</code> to generate an HTML coverage report for ColrC.</li>
 </ul>
 </li>
-<li><code>gen_latex_pdf.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/gen_latex_pdf.sh"><code>gen_latex_pdf.sh</code></a><ul>
 <li>Generates the PDF manual from Doxygen's LaTeX output.</li>
 </ul>
 </li>
-<li><code>get_version.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/get_version.sh"><code>get_version.sh</code></a><ul>
 <li>Report the current ColrC version (based on the source files).</li>
 </ul>
 </li>
-<li><code>install.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/install.sh"><code>install.sh</code></a><ul>
 <li>Installs and uninstalls the <code>colrc</code> executable.</li>
 </ul>
 </li>
-<li><code>is_build.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/is_build.sh"><code>is_build.sh</code></a><ul>
 <li>Determines the current build type for <code>colrc</code> and <code>test_colrc</code> (<code>debug</code>, <code>release</code>, <code>sanitize</code>).</li>
 </ul>
 </li>
-<li><code>make_dist.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/make_dist.sh"><code>make_dist.sh</code></a><ul>
 <li>Creates a small downloadable package for users of ColrC.</li>
 </ul>
 </li>
-<li><code>make_help_fmter.py</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/make_help_fmter.py"><code>make_help_fmter.py</code></a><ul>
 <li>Colorizes and formats output for the <code>make help</code> target.</li>
 </ul>
 </li>
-<li><code>refactor.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/refactor.sh"><code>refactor.sh</code></a><ul>
 <li>Basic refactoring tool, with preview of changes to be made.</li>
 </ul>
 </li>
-<li><code>replacestr.py</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/replacestr.py"><code>replacestr.py</code></a><ul>
 <li>Replaces strings in files, with options to preview the changes. <code>refactor.sh</code> is implemented with this.</li>
 </ul>
 </li>
-<li><code>snippet.py</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/snippet.py"><code>snippet.py</code></a><ul>
 <li>Compile and run arbitrary C code, ColrC source examples, ColrC snippets (snippets of C that use ColrC features), with options for running code through <code>memcheck</code>, <code>gdb</code>/<code>kdbg</code>, or user-specified tools.</li>
 </ul>
 </li>
-<li><code>undoxy_markdown.py</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/undoxy_markdown.py"><code>undoxy_markdown.py</code></a><ul>
 <li>Generates a GitHub-friendly README from <code>index.md</code> for ColrC.</li>
 </ul>
 </li>
-<li><code>unused.py</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/unused.py"><code>unused.py</code></a><ul>
 <li>Display unused and untested functions/macros in the ColrC source.</li>
 </ul>
 </li>
-<li><code>valgrind_run.sh</code><ul>
+<li><a href="https://github.com/welbornprod/colrc/blob/dev/ tools/valgrind_run.sh"><code>valgrind_run.sh</code></a><ul>
 <li>Runs <code>colrc</code> or the tests through <code>cachegrind</code>, <code>callgrind</code>, or <code>memcheck</code>.</li>
 </ul>
 </li>
