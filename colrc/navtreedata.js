@@ -6,11 +6,12 @@ var NAVTREE =
         [ "Including", "index.html#autotoc_md11", null ],
         [ "Compiling", "index.html#autotoc_md12", null ],
         [ "Files", "index.html#autotoc_md13", null ],
-        [ "Example Usage", "index.html#autotoc_md14", [
-          [ "Example Files", "index.html#autotoc_md15", null ]
+        [ "Library", "index.html#autotoc_md14", null ],
+        [ "Example Usage", "index.html#autotoc_md15", [
+          [ "Example Files", "index.html#autotoc_md16", null ]
         ] ],
-        [ "Why", "index.html#autotoc_md16", null ],
-        [ "Future", "index.html#autotoc_md17", null ]
+        [ "Why", "index.html#autotoc_md17", null ],
+        [ "Future", "index.html#autotoc_md18", null ]
       ] ]
     ] ],
     [ "Development", "development.html", "development" ],
