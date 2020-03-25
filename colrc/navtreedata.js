@@ -2,23 +2,24 @@ var NAVTREE =
 [
   [ "ColrC", "index.html", [
     [ "Documentation", "index.html", [
-      [ "Getting Started", "index.html#autotoc_md10", [
-        [ "Including", "index.html#autotoc_md11", null ],
-        [ "Compiling", "index.html#autotoc_md12", null ],
-        [ "Files", "index.html#autotoc_md13", null ],
-        [ "Library", "index.html#autotoc_md14", null ],
-        [ "Example Usage", "index.html#autotoc_md15", [
-          [ "Example Files", "index.html#autotoc_md16", null ]
+      [ "Getting Started", "index.html#autotoc_md11", [
+        [ "Including", "index.html#autotoc_md12", null ],
+        [ "Compiling", "index.html#autotoc_md13", null ],
+        [ "Files", "index.html#autotoc_md14", null ],
+        [ "Library", "index.html#autotoc_md15", null ],
+        [ "Example Usage", "index.html#autotoc_md16", [
+          [ "Example Files", "index.html#autotoc_md17", null ]
         ] ],
-        [ "Why", "index.html#autotoc_md17", null ],
-        [ "Future", "index.html#autotoc_md18", null ]
+        [ "Why", "index.html#autotoc_md18", null ],
+        [ "Future", "index.html#autotoc_md19", null ]
       ] ]
     ] ],
     [ "Development", "development.html", "development" ],
     [ "Downloads", "downloads.html", [
       [ "Downloadable Files", "downloads.html#autotoc_md6", [
         [ "PDF", "downloads.html#autotoc_md7", null ],
-        [ "Source Files", "downloads.html#autotoc_md8", null ]
+        [ "Source Files", "downloads.html#autotoc_md8", null ],
+        [ "Debian Packages", "downloads.html#autotoc_md9", null ]
       ] ]
     ] ],
     [ "Tool", "tool.html", "tool" ],
