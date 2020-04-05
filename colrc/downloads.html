@@ -104,23 +104,42 @@ $(document).ready(function(){initNavTree('downloads.html','');});
 <div class="textblock"><h1><a class="anchor" id="autotoc_md6"></a>
 Downloadable Files</h1>
 <p>Here are a couple downloadable packages from <b>ColrC</b>.</p>
+<p><a class="anchor" id="pdf"></a></p>
 <h2><a class="anchor" id="autotoc_md7"></a>
 PDF</h2>
 <p>This documentation is available in a PDF:</p><ul>
 <li><a href="https://welbornprod.com/colrc/ColrC-manual.pdf">ColrC-manual.pdf</a></li>
 </ul>
+<p><a class="anchor" id="source-files"></a></p>
 <h2><a class="anchor" id="autotoc_md8"></a>
 Source Files</h2>
 <p>The <b>ColrC</b> header and source file can be downloaded if you don't want to clone the github repo:</p><ul>
 <li><a href="https://welbornprod.com/colrc/dist/colrc-latest.tar.gz">Source Package</a></li>
 </ul>
+<p><a class="anchor" id="debian-packages"></a></p>
 <h2><a class="anchor" id="autotoc_md9"></a>
 Debian Packages</h2>
-<p>There is a basic debian package for the standalone <a href="https://welbornprod.com/colrc/tool.html">colrc</a> executable, and a shared library (<code>libcolor</code>). You can build these yourself by cloning the repo and running <code>./tools/make_dist.sh</code>:</p><ul>
-<li><a href="https://welbornprod.com/colrc/dist/colr_latest_amd64.deb">colrc</a> - Installs the <code>colrc</code> tool.</li>
-<li><a href="https://welbornprod.com/colrc/dist/libcolr-dev_latest_amd64.deb">libcolr</a> - Installs <code>libcolr.so</code> and <code><a class="el" href="colr_8h.html" title="Declarations for ColrC functions, enums, structs, etc. ">colr.h</a></code>. </li>
+<p>There is a basic debian package for the standalone <a href="https://welbornprod.com/colrc/tool.html">colrc</a> executable, and a shared library (<code>libcolor</code>). You can build these yourself by cloning the repo and running <code>make distdeb</code>:</p><ul>
+<li><a href="https://welbornprod.com/colrc/dist/colr_latest_amd64.deb">colr</a> - Installs the <code>colrc</code> tool.</li>
+<li><a href="https://welbornprod.com/colrc/dist/libcolr-dev_latest_amd64.deb">libcolr</a> - Installs <code>libcolr.so</code>, <code><a class="el" href="colr_8h.html" title="Declarations for ColrC functions, enums, structs, etc. ">colr.h</a></code>, and <code>man</code> pages.</li>
 </ul>
-</div></div><!-- contents -->
+<p><a class="anchor" id="installing-debian-packages"></a></p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Installing Debian Packages</h3>
+<p>Download or build the package, and then install it with <code>dpkg</code>: </p><div class="fragment"><div class="line"># colr</div><div class="line">sudo dpkg -i colr_latest_amd64.deb</div><div class="line"></div><div class="line"># libcolr</div><div class="line">sudo dpkg -i libcolr-dev_latest_amd64.deb</div></div><!-- fragment --><p><a class="anchor" id="uninstalling-debian-packages"></a></p>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Uninstalling Debian Packages</h3>
+<p>You can uninstall the packages using <code>dpkg -r</code>, <code>apt-get</code>, or <code>apt</code>. This will remove all of the installed files: </p><div class="fragment"><div class="line"># colr</div><div class="line">sudo apt remove colr</div><div class="line"></div><div class="line"># libcolr</div><div class="line">sudo apt remove libcolr-dev</div></div><!-- fragment --><p><a class="anchor" id="debian-source-packages"></a></p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Debian Source Packages</h2>
+<p>There are basic debian source packages for <code>colr</code> and <code>libcolr-dev</code>. They are not the same as the <a href="#source-files">source package</a> at the top of this page. They include only the minimum build dependencies to compile ColrC (colrc or libcolr) and generate a debian package. You can build these yourself by cloning the repo and running <code>make distdebfull</code>:</p><ul>
+<li><a href="https://welbornprod.com/colrc/dist/colr_latest.tar.gz">colr</a> - Source package for the <code>colrc</code> tool.</li>
+<li><a href="https://welbornprod.com/colrc/dist/libcolr-dev_latest.tar.gz">libcolr</a> - Source package for <code>libcolr.so</code>, <code><a class="el" href="colr_8h.html" title="Declarations for ColrC functions, enums, structs, etc. ">colr.h</a></code>, and <code>man</code> pages.</li>
+</ul>
+<p><a class="anchor" id="building-debian-source-packages"></a></p>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Building Debian Source Packages</h3>
+<p>Once you've downloaded the source package for either <code>colr</code> or <code>libcolr-dev</code>, you can use <code>debmake</code> to generate a debian package for them: </p><div class="fragment"><div class="line"># colr</div><div class="line">debmake -a colr_latest.tar.gz</div><div class="line"># ...follow instructions:</div><div class="line">cd colr-latest</div><div class="line">dpkg-buildpackage</div><div class="line"></div><div class="line"># libcolr: The binary spec (-b) is required.</div><div class="line">debmake -b &#39;libcolr:lib&#39; -a libcolr-dev_latest.tar.gz</div><div class="line"># ...follow instructions:</div><div class="line">cd libcolr-dev-latest</div><div class="line">dpkg-buildpackage</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->
 <!-- start footer part -->
