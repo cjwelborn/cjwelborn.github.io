@@ -22,7 +22,7 @@ var development =
       [ "Debian Packages", "make.html#autotoc_md29", null ]
     ] ],
     [ "Tools", "tools.html", [
-      [ "ColrC Tools", "tools.html#autotoc_md45", null ]
+      [ "ColrC Tools", "tools.html#autotoc_md47", null ]
     ] ],
     [ "Examples", "examples_dev.html", [
       [ "ColrC Examples", "examples_dev.html#autotoc_md14", null ]

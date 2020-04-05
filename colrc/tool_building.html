@@ -101,15 +101,24 @@ $(document).ready(function(){initNavTree('tool_building.html','');});
 <div class="title">Tool Building </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md42"></a>
+<div class="textblock"><p><a class="anchor" id="tool-build"></a></p>
+<h1><a class="anchor" id="autotoc_md42"></a>
 Build</h1>
-<p>To use the ColrC tool you will have to build it first. A <code>makefile</code> is provided, so the actual building only takes one command. Make sure you have all of the <a href="dependencies.html">system dependencies</a> first.</p>
+<p>To use the ColrC tool you will have to build it first. A <code>makefile</code> is provided, so the actual building only takes one command. Make sure you have all of the <a href="https://welbornprod.com/colrc/dependencies.html">system dependencies</a> first.</p>
 <p>Clone the repo, if you haven't already: </p><div class="fragment"><div class="line">git clone https://github.com/welbornprod/colrc.git</div></div><!-- fragment --><p>Make sure you're in the ColrC project directory: </p><div class="fragment"><div class="line">cd colrc</div></div><!-- fragment --><p>Finally, run the <code>make</code> target: </p><div class="fragment"><div class="line">make release</div></div><!-- fragment --><p>The build process doesn't take very long, and when it's done there will be a <code>colrc</code> executable in the project directory.</p>
+<p><a class="anchor" id="install-debian-package"></a></p>
 <h1><a class="anchor" id="autotoc_md43"></a>
-Install</h1>
-<p>Installing is just copying or symlinking the executable somewhere in <code>$PATH</code>. There is a <code>make</code> target that will let you choose an install path, and do the rest for you: </p><div class="fragment"><div class="line">make install</div><div class="line"></div><div class="line"># Install as a symlink instead of a copy:</div><div class="line">make installlink</div></div><!-- fragment --><p>By default, it will ask for confirmation before installing or overwriting anything.</p>
+Install Debian Package</h1>
+<p>You can <a href="https://welbornprod.com/colrc/downloads.html#debian-packages">download</a> or <a href="https://welbornprod.com/colrc/make.html#make-debian-packages">build</a> a debian package to install the colr tool: </p><div class="fragment"><div class="line">make distdeb</div><div class="line">sudo dpkg -i dist/colr_latest*.deb</div></div><!-- fragment --><p><a class="anchor" id="uninstall-debian-package"></a></p>
 <h1><a class="anchor" id="autotoc_md44"></a>
-Uninstall</h1>
+Uninstall Debian Package</h1>
+<p>You can uninstall the colr package just like any other debian package: </p><div class="fragment"><div class="line">sudo apt remove colr</div></div><!-- fragment --><p><a class="anchor" id="install-manual"></a></p>
+<h1><a class="anchor" id="autotoc_md45"></a>
+Install Manual</h1>
+<p>Installing is just copying or symlinking the executable somewhere in <code>$PATH</code>. There is a <code>make</code> target that will let you choose an install path, and do the rest for you: </p><div class="fragment"><div class="line">make install</div><div class="line"></div><div class="line"># Install as a symlink instead of a copy:</div><div class="line">make installlink</div></div><!-- fragment --><p>By default, it will ask for confirmation before installing or overwriting anything.</p>
+<p><a class="anchor" id="uninstall-manual"></a></p>
+<h1><a class="anchor" id="autotoc_md46"></a>
+Uninstall Manual</h1>
 <p>If <code>colrc</code> was installed somewhere in <code>$PATH</code>, you can simply run the install script with <code>--uninstall</code>, or just: </p><div class="fragment"><div class="line">make uninstall</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.8.13-->

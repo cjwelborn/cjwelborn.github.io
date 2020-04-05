@@ -9,7 +9,9 @@ var tool =
     ] ],
     [ "Tool Building", "tool_building.html", [
       [ "Build", "tool_building.html#autotoc_md42", null ],
-      [ "Install", "tool_building.html#autotoc_md43", null ],
-      [ "Uninstall", "tool_building.html#autotoc_md44", null ]
+      [ "Install Debian Package", "tool_building.html#autotoc_md43", null ],
+      [ "Uninstall Debian Package", "tool_building.html#autotoc_md44", null ],
+      [ "Install Manual", "tool_building.html#autotoc_md45", null ],
+      [ "Uninstall Manual", "tool_building.html#autotoc_md46", null ]
     ] ]
 ];
