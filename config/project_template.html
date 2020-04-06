@@ -5,26 +5,28 @@
                 <span>{name}</span>
             </a>
         </div>
-        <div class='project-stats'>
-            <div class='project-stat'>
-                <div class='project-stat-key'>
-                    <span>stars:</span>
+        <div class='project-links'>
+            <div class='project-url arrow'>
+                <a href='{html_url}'>{full_name}</a>
+            </div>
+            <div class='project-stats'>
+                <div class='project-stat'>
+                    <div class='project-stat-key'>
+                        <span>stars:</span>
+                    </div>
+                    <div class='project-stat-value'>
+                        <a href='{starred_url}'>{stargazers_count}</a>
+                    </div>
                 </div>
-                <div class='project-stat-value'>
-                    <a href='{starred_url}'>{stargazers_count}</a>
+                <div class='project-stat'>
+                    <div class='project-stat-key'>
+                        <span>forks:</span>
+                    </div>
+                    <div class='project-stat-value'>
+                        <a href='{forked_url}'>{forks_count}</a>
+                    </div>
                 </div>
             </div>
-            <div class='project-stat'>
-                <div class='project-stat-key'>
-                    <span>forks:</span>
-                </div>
-                <div class='project-stat-value'>
-                    <a href='{forked_url}'>{forks_count}</a>
-                </div>
-            </div>
-        </div>
-        <div class='project-url'>
-            <a href='{html_url}'>{full_name}</a>
         </div>
     </div>
     <div class='project-desc'>

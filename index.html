@@ -7,19 +7,50 @@
     <meta name="generator" content="Doxygen 1.8.13"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link type='text/css' rel='stylesheet' href='main.css'/>
+    <svg height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+        <feOffset dx="2" dy="2" result="offsetblur"/>
+        <feFlood flood-color="rgba(0, 0, 0, 0.35)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
 </head>
 <body>
+<div id='header'>
+    <div id='header-box'>
+        <img id='logo' src='http://gravatar.com/avatar/ae1211215707f9089b5c5d355cff5408?s=128' alt='Cj Welborn'>
+        <div id='header-text'>
+            <span id='name'>Christopher Welborn</span>
+            <span id='location'>Jasper, AL</span>
+        </div>
+    </div>
+</div>
 <div id='projects'>
     <h1>Projects</h1>
     I have a list of <a href='projects.html'>projects</a> you can look at,
     or you can just jump over to github:
 
     <div class='github-links'>
-        <div class='github-link'>
-            <a href='https://github.com/cjwelborn'>github.com/cjwelborn</a>
+        <div class='github-link-box'>
+            <div class='github-link'>
+                <a href='https://github.com/welbornprod'>github.com/welbornprod</a>
+            </div>
+            <div class='github-link-text arrow'>
+                Open-source projects that I've created.
+            </div>
         </div>
-        <div class='github-link'>
-            <a href='https://github.com/welbornprod'>github.com/welbornprod</a>
+        <div class='github-link-box'>
+            <div class='github-link'>
+                <a href='https://github.com/cjwelborn'>github.com/cjwelborn</a>
+            </div>
+            <div class='github-link-text arrow'>
+                Personal forks, dotfiles, config, etc.
+            </div>
         </div>
     </div>
 </div>
