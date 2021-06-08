@@ -39,7 +39,7 @@
   </td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ColrC
-   &#160;<span id="projectnumber">0.3.7</span>
+   &#160;<span id="projectnumber">0.4.0</span>
    </div>
    <div id="projectbrief">An easy to use C library for linux terminal colors/escape-codes.</div>
   </td>
@@ -108,8 +108,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 Getting Started</h1>
 <p><b>ColrC</b> <small>(<em><b>kuh</b>·lr·see</em>, feels like heresy)</small> is a C library for terminal colors/escape-codes on linux.</p>
 <p>There is also a command-line tool (<a href="tool.html">colr tool</a>) based on <b>ColrC</b>.</p>
-<p>It is designed to be flexible and easy to use. Colors can be specified using defined names (<code>RED</code>, <code>BLUE</code>, etc.), 256-colors (<code><a class="el" href="colr_8h.html#a37ff4fc6d17b53b60202be55bd0732c5" title="Casts to ExtendedValue (unsigned char). ">ext(36)</a></code>), <a class="el" href="colr_8h.html#structRGB" title="Container for RGB values. ">RGB</a> colors (<code><a class="el" href="colr_8h.html#a6fa7a1b0351d0bdbdf9fd5f882673d57" title="Creates an anonymous RGB struct for use in function calls. ">rgb(0, 0, 55)</a></code>), hex colors (<code><a class="el" href="colr_8h.html#a8fe812f8e76e4baed394ee9adf46b3df" title="Use RGB_from_hex_default() to create an RGB value. ">hex(s)</a></code>, <code>hex("#ff0000")</code>), or known names (<code>"aliceblue"</code>). These colors can be used with <code><a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">fore()</a></code> and <code><a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">back()</a></code> to set the foreground/background colors (<code><a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">fore(RED)</a></code>, <code><a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">back(WHITE)</a></code>). Styles are specified with their defined names (<code><a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">style(BRIGHT)</a></code>).</p>
-<p>Strings can be joined, replaced, colorized, and justified using a few functions/macros. <code><a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">fore()</a></code>, <code><a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">back()</a></code>, and <code><a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">style()</a></code> are mostly optional and position doesn't matter.</p>
+<p>It is designed to be flexible and easy to use. Colors can be specified using defined names (<code>RED</code>, <code>BLUE</code>, etc.), 256-colors (<code><a class="el" href="colr_8h.html#a37ff4fc6d17b53b60202be55bd0732c5" title="Casts to ExtendedValue (unsigned char). ">ext(36)</a></code>), <a class="el" href="colr_8h.html#structRGB" title="Container for RGB values. ">RGB</a> colors (<code><a class="el" href="colr_8h.html#a6fa7a1b0351d0bdbdf9fd5f882673d57" title="Creates an anonymous RGB struct for use in function calls. ">rgb(0, 0, 55)</a></code>), hex colors (<code><a class="el" href="colr_8h.html#a8fe812f8e76e4baed394ee9adf46b3df" title="Use RGB_from_hex_default() to create an RGB value. ">hex(s)</a></code>, <code>hex("#ff0000")</code>), or known names (<code>"aliceblue"</code>). These colors can be used with <code><a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">fore()</a></code> and <code><a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">back()</a></code> to set the foreground/background colors (<code><a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">fore(RED)</a></code>, <code><a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">back(WHITE)</a></code>). Styles are specified with their defined names (<code><a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">style(BRIGHT)</a></code>).</p>
+<p>Strings can be joined, replaced, colorized, and justified using a few functions/macros. <code><a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">fore()</a></code>, <code><a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">back()</a></code>, and <code><a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">style()</a></code> are mostly optional and position doesn't matter.</p>
 <p>Ownership in <b>ColrC</b> is easy to remember. Strings (<code>char*</code>) are yours, everything else belongs to <b>ColrC</b>. If you create a <b>ColrC</b> object with one of the <code>Colr*</code> macros to use inside of the <code>colr*</code> macros (notice the casing), it will be released. The resulting strings that are returned from the <code>colr*</code> macros will not be released. You must <code>free()</code> those.</p>
 <p>If you use <code>colr_print</code> or <code>colr_puts</code> you won't have to manage the resulting string either.</p>
 <h2><a class="anchor" id="autotoc_md16"></a>
@@ -144,15 +144,15 @@ Example Usage</h2>
 <tr>
 <td align="left">colr </td><td align="left">Generates a colorized string. </td></tr>
 <tr>
-<td align="left">Colr </td><td align="left">Generates a colorized <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>. </td></tr>
+<td align="left">Colr </td><td align="left">Generates a colorized <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, for use with other functions/macros. </td></tr>
 <tr>
 <td align="left">colr_cat </td><td align="left">Concatenates strings and ColrC objects into a string. </td></tr>
 <tr>
-<td align="left">Colr_cat </td><td align="left">Concatenates strings and ColrC objects into a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. </td></tr>
+<td align="left">Colr_cat </td><td align="left">Concatenates strings and ColrC objects into a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, for use with other functions/macros. </td></tr>
 <tr>
 <td align="left">colr_join </td><td align="left">Generates a string by joining strings/ColrC-objects by another string/ColrC-object. </td></tr>
 <tr>
-<td align="left">Colr_join </td><td align="left">Generates a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> by joining strings/ColrC-objects by another string/ColrC-object. </td></tr>
+<td align="left">Colr_join </td><td align="left">Generates a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> by joining strings/ColrC-objects by another string/ColrC-object, for use with other functions/macros. </td></tr>
 </table>
 <p>When an allocated ColorArg/ColorText/ColorResult is used inside of a Colr/colr call it is automatically released. Strings produced by a Colr/colr call are managed by the user (you must <code>free()</code> them).</p>
 <p>I've included an example that showcases some of these:</p>
@@ -166,13 +166,21 @@ Example Files</h3>
 <tr>
 <td align="left"><a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c">Colr</a> </td><td align="left"><a class="el" href="Colr_example_8c-example.html">Colr_example.c</a> </td></tr>
 <tr>
+<td align="left"><a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465">Colr_cat</a> </td><td align="left"><a class="el" href="colr_cat_example_8c-example.html">colr_cat_example.c</a> </td></tr>
+<tr>
+<td align="left"><a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e">Colr_join</a> </td><td align="left"><a class="el" href="colr_join_example_8c-example.html">colr_join_example.c</a> </td></tr>
+<tr>
 <td align="left"><a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa">colr_cat</a> </td><td align="left"><a class="el" href="colr_cat_example_8c-example.html">colr_cat_example.c</a> </td></tr>
 <tr>
 <td align="left"><a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0">colr_join</a> </td><td align="left"><a class="el" href="colr_join_example_8c-example.html">colr_join_example.c</a> </td></tr>
 <tr>
 <td align="left"><a class="el" href="colr_8h.html#a4559cb7ed508a538687727ccd4586ccb">colr_replace</a> </td><td align="left"><a class="el" href="colr_replace_example_8c-example.html">colr_replace_example.c</a> </td></tr>
 <tr>
+<td align="left"><a class="el" href="colr_8h.html#a1ca60a944b824cd8049451792904c2eb">colr_replace_all</a> </td><td align="left"><a class="el" href="colr_replace_all_example_8c-example.html">colr_replace_all_example.c</a> </td></tr>
+<tr>
 <td align="left"><a class="el" href="colr_8h.html#a2262af7b2b1e9281272c63c85b9e7357">colr_replace_re</a> </td><td align="left"><a class="el" href="colr_replace_re_example_8c-example.html">colr_replace_re_example.c</a> </td></tr>
+<tr>
+<td align="left"><a class="el" href="colr_8h.html#a34553de01998eff17512d7ef1e9f3fa0">colr_replace_re_all</a> </td><td align="left"><a class="el" href="colr_replace_re_all_example_8c-example.html">colr_replace_re_all_example.c</a> </td></tr>
 <tr>
 <td align="left"><a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f">fore</a> </td><td align="left"><a class="el" href="fore_example_8c-example.html">fore_example.c</a> </td></tr>
 <tr>
@@ -204,7 +212,7 @@ Future</h2>
     </li>
     <!-- This actually comes *before* the "generated by" msg, because of float. -->
     <li class="footer">
-        ColrC v.0.3.7
+        ColrC v.0.4.0
     </li>
   </ul>
 </div>

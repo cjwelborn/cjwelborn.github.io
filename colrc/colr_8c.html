@@ -39,7 +39,7 @@
   </td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">ColrC
-   &#160;<span id="projectnumber">0.3.7</span>
+   &#160;<span id="projectnumber">0.4.0</span>
    </div>
    <div id="projectbrief">An easy to use C library for linux terminal colors/escape-codes.</div>
   </td>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('colr_8c.html','');});
 <div class="title">colr.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<h3 class="version">(0.3.7)</h3>
+<h3 class="version">(0.4.0)</h3>
 <p>Implements everything in the <a class="el" href="colr_8h.html" title="Declarations for ColrC functions, enums, structs, etc. ">colr.h</a> header.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="colr_8h_source.html">colr.h</a>&quot;</code><br />
@@ -261,6 +261,9 @@ Functions</h2></td></tr>
 <tr class="memitem:adf78eeb364553d130055d93e9892cd9c"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#adf78eeb364553d130055d93e9892cd9c">ColorJustifyMethod_repr</a> (<a class="el" href="colr_8h.html#af1a3fe0b966f944fd659a98be170045f">ColorJustifyMethod</a> meth)</td></tr>
 <tr class="memdesc:adf78eeb364553d130055d93e9892cd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string (<code>char*</code>) representation for a ColorJustifyMethod.  <a href="#adf78eeb364553d130055d93e9892cd9c">More...</a><br /></td></tr>
 <tr class="separator:adf78eeb364553d130055d93e9892cd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178f3d7e1f40814160aee4074de494ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *cres, int width, char padchar)</td></tr>
+<tr class="memdesc:a178f3d7e1f40814160aee4074de494ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Centers a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>'s string result and returns an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> (may be the same <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> if it is "empty").  <a href="#a178f3d7e1f40814160aee4074de494ab">More...</a><br /></td></tr>
+<tr class="separator:a178f3d7e1f40814160aee4074de494ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4c95a667cdcd05fd108ddf20b9a7328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *cres,...)</td></tr>
 <tr class="memdesc:ad4c95a667cdcd05fd108ddf20b9a7328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Colorize a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, and return a new allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>.  <a href="#ad4c95a667cdcd05fd108ddf20b9a7328">More...</a><br /></td></tr>
 <tr class="separator:ad4c95a667cdcd05fd108ddf20b9a7328"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,18 +282,30 @@ Functions</h2></td></tr>
 <tr class="memitem:a91d92286745806229c0369c20edf641c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a91d92286745806229c0369c20edf641c">ColorResult_from_stra</a> (const char *s)</td></tr>
 <tr class="memdesc:a91d92286745806229c0369c20edf641c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a copy of a string, and creates an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> from it.  <a href="#a91d92286745806229c0369c20edf641c">More...</a><br /></td></tr>
 <tr class="separator:a91d92286745806229c0369c20edf641c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941b8c848756dc9c9bfe49b023f8e44b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a941b8c848756dc9c9bfe49b023f8e44b">ColorResult_is_empty</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> cres)</td></tr>
+<tr class="memdesc:a941b8c848756dc9c9bfe49b023f8e44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> is "empty" (NULL or empty string).  <a href="#a941b8c848756dc9c9bfe49b023f8e44b">More...</a><br /></td></tr>
+<tr class="separator:a941b8c848756dc9c9bfe49b023f8e44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd5fe635f26119c3a341b5dfe23abc97"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#afd5fe635f26119c3a341b5dfe23abc97">ColorResult_is_ptr</a> (void *p)</td></tr>
 <tr class="memdesc:afd5fe635f26119c3a341b5dfe23abc97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks a void pointer to see if it contains a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> struct.  <a href="#afd5fe635f26119c3a341b5dfe23abc97">More...</a><br /></td></tr>
 <tr class="separator:afd5fe635f26119c3a341b5dfe23abc97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5169ef5d27a9c14bb765f7e7b70c9e2b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a5169ef5d27a9c14bb765f7e7b70c9e2b">ColorResult_length</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> cres)</td></tr>
 <tr class="memdesc:a5169ef5d27a9c14bb765f7e7b70c9e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the length in bytes (including the null-terminator), that is needed to store the return from <a class="el" href="colr_8c.html#af5174a576892401ea59b737558f27d8b" title="Convert a ColorResult into a string (char*). ">ColorResult_to_str()</a> (<code>.result</code>).  <a href="#a5169ef5d27a9c14bb765f7e7b70c9e2b">More...</a><br /></td></tr>
 <tr class="separator:a5169ef5d27a9c14bb765f7e7b70c9e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368f400e37c3a974e8550de206e1d7b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *cres, int width, char padchar)</td></tr>
+<tr class="memdesc:a368f400e37c3a974e8550de206e1d7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left-justifies a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>'s string result and returns an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> (may be the same <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> if it is "empty").  <a href="#a368f400e37c3a974e8550de206e1d7b1">More...</a><br /></td></tr>
+<tr class="separator:a368f400e37c3a974e8550de206e1d7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af752035c362c7c9ddb2e7f2f2305d509"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#af752035c362c7c9ddb2e7f2f2305d509">ColorResult_new</a> (char *s)</td></tr>
 <tr class="memdesc:af752035c362c7c9ddb2e7f2f2305d509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> with an allocated string (<code>char*</code>).  <a href="#af752035c362c7c9ddb2e7f2f2305d509">More...</a><br /></td></tr>
 <tr class="separator:af752035c362c7c9ddb2e7f2f2305d509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae0b90c57e8c4c475d9e0f517f3a0d42"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#aae0b90c57e8c4c475d9e0f517f3a0d42">ColorResult_repr</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> cres)</td></tr>
 <tr class="memdesc:aae0b90c57e8c4c475d9e0f517f3a0d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string representation for a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>.  <a href="#aae0b90c57e8c4c475d9e0f517f3a0d42">More...</a><br /></td></tr>
 <tr class="separator:aae0b90c57e8c4c475d9e0f517f3a0d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ef863d2b899c15cb76672f651efd1a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a73ef863d2b899c15cb76672f651efd1a">ColorResult_rip_str</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *cres)</td></tr>
+<tr class="memdesc:a73ef863d2b899c15cb76672f651efd1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string from a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer, but frees the <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> itself (without destroying the string (<code>char*</code>)).  <a href="#a73ef863d2b899c15cb76672f651efd1a">More...</a><br /></td></tr>
+<tr class="separator:a73ef863d2b899c15cb76672f651efd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1423abeaa2e93b16a35a5084c3de290b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *cres, int width, char padchar)</td></tr>
+<tr class="memdesc:a1423abeaa2e93b16a35a5084c3de290b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right-justifies a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>'s string result and returns an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> (may be the same <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> if it is "empty").  <a href="#a1423abeaa2e93b16a35a5084c3de290b">More...</a><br /></td></tr>
+<tr class="separator:a1423abeaa2e93b16a35a5084c3de290b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f5304067f9d673ce5b86ddba2a8807b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a5f5304067f9d673ce5b86ddba2a8807b">ColorResult_to_ptr</a> (<a class="el" href="colr_8h.html#structColorResult">ColorResult</a> cres)</td></tr>
 <tr class="memdesc:a5f5304067f9d673ce5b86ddba2a8807b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate memory for a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, fill it, and return it.  <a href="#a5f5304067f9d673ce5b86ddba2a8807b">More...</a><br /></td></tr>
 <tr class="separator:a5f5304067f9d673ce5b86ddba2a8807b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,9 +345,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a65363a3601cd9cfcdc7fc40722d5d3c3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a65363a3601cd9cfcdc7fc40722d5d3c3">ColorText_repr</a> (<a class="el" href="colr_8h.html#structColorText">ColorText</a> ctext)</td></tr>
 <tr class="memdesc:a65363a3601cd9cfcdc7fc40722d5d3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a string (<code>char*</code>) representation for a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>.  <a href="#a65363a3601cd9cfcdc7fc40722d5d3c3">More...</a><br /></td></tr>
 <tr class="separator:a65363a3601cd9cfcdc7fc40722d5d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41dff01c3b78be483310bd7189e45a6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorText">ColorText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a41dff01c3b78be483310bd7189e45a6a">ColorText_set_center</a> (<a class="el" href="colr_8h.html#structColorText">ColorText</a> *ctext, int width, char padchar)</td></tr>
+<tr class="memdesc:a41dff01c3b78be483310bd7189e45a6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to include a <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a> member to center-justify text when it is converted into a string.  <a href="#a41dff01c3b78be483310bd7189e45a6a">More...</a><br /></td></tr>
+<tr class="separator:a41dff01c3b78be483310bd7189e45a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab408d87cce896acccb75357acca8ade4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorText">ColorText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#ab408d87cce896acccb75357acca8ade4">ColorText_set_just</a> (<a class="el" href="colr_8h.html#structColorText">ColorText</a> *ctext, <a class="el" href="colr_8h.html#structColorJustify">ColorJustify</a> cjust)</td></tr>
 <tr class="memdesc:ab408d87cce896acccb75357acca8ade4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a> method for a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, and return the <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>.  <a href="#ab408d87cce896acccb75357acca8ade4">More...</a><br /></td></tr>
 <tr class="separator:ab408d87cce896acccb75357acca8ade4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed4f6fb53f02c822484a2734ae5df89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorText">ColorText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a8ed4f6fb53f02c822484a2734ae5df89">ColorText_set_ljust</a> (<a class="el" href="colr_8h.html#structColorText">ColorText</a> *ctext, int width, char padchar)</td></tr>
+<tr class="memdesc:a8ed4f6fb53f02c822484a2734ae5df89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to include a <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a> member to left-justify text when it is converted into a string.  <a href="#a8ed4f6fb53f02c822484a2734ae5df89">More...</a><br /></td></tr>
+<tr class="separator:a8ed4f6fb53f02c822484a2734ae5df89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d9c857353166d8844e38a2cdca9340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorText">ColorText</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a18d9c857353166d8844e38a2cdca9340">ColorText_set_rjust</a> (<a class="el" href="colr_8h.html#structColorText">ColorText</a> *ctext, int width, char padchar)</td></tr>
+<tr class="memdesc:a18d9c857353166d8844e38a2cdca9340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to include a <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a> member to right-justify text when it is converted into a string.  <a href="#a18d9c857353166d8844e38a2cdca9340">More...</a><br /></td></tr>
+<tr class="separator:a18d9c857353166d8844e38a2cdca9340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880b39cd2ce9b622dbe7790a162d88f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a880b39cd2ce9b622dbe7790a162d88f7">ColorText_set_values</a> (<a class="el" href="colr_8h.html#structColorText">ColorText</a> *ctext, char *text,...)</td></tr>
 <tr class="memdesc:a880b39cd2ce9b622dbe7790a162d88f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an existing <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> from 1 mandatory string (<code>char*</code>), and optional fore, back, and style args (pointers to ColorArgs).  <a href="#a880b39cd2ce9b622dbe7790a162d88f7">More...</a><br /></td></tr>
 <tr class="separator:a880b39cd2ce9b622dbe7790a162d88f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,6 +441,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a10030070daafdee7124638adfc5469d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a10030070daafdee7124638adfc5469d8">colr_append_reset</a> (char *s)</td></tr>
 <tr class="memdesc:a10030070daafdee7124638adfc5469d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends CODE_RESET_ALL to a string (<code>char*</code>), but makes sure to do it before any newlines.  <a href="#a10030070daafdee7124638adfc5469d8">More...</a><br /></td></tr>
 <tr class="separator:a10030070daafdee7124638adfc5469d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b21f46594a02e237c4578d0e029fd25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char</a> (void *x, int width, char padchar)</td></tr>
+<tr class="memdesc:a5b21f46594a02e237c4578d0e029fd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a center-justified (allocated) <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> when given a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or string (<code>char*</code>), along with the desired <code>width</code> and pad character.  <a href="#a5b21f46594a02e237c4578d0e029fd25">More...</a><br /></td></tr>
+<tr class="separator:a5b21f46594a02e237c4578d0e029fd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f1ea562310969b7efa8711a843f103c"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a7f1ea562310969b7efa8711a843f103c">colr_char_escape_char</a> (const char c)</td></tr>
 <tr class="memdesc:a7f1ea562310969b7efa8711a843f103c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the char needed to represent an escape sequence in C.  <a href="#a7f1ea562310969b7efa8711a843f103c">More...</a><br /></td></tr>
 <tr class="separator:a7f1ea562310969b7efa8711a843f103c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,6 +483,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a71fcf08ad36d4424790e275d973445fc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn</a> (void *joinerp, void *ps, size_t count)</td></tr>
 <tr class="memdesc:a71fcf08ad36d4424790e275d973445fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Join an array of strings (<code>char*</code>), <code><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a></code>s, or <code><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a></code>s by another string (<code>char*</code>), <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>.  <a href="#a71fcf08ad36d4424790e275d973445fc">More...</a><br /></td></tr>
 <tr class="separator:a71fcf08ad36d4424790e275d973445fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8253dca0cbfe52ba97c96766bc240ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char</a> (void *x, int width, char padchar)</td></tr>
+<tr class="memdesc:af8253dca0cbfe52ba97c96766bc240ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a left-justified (allocated) <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> when given a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or string (<code>char*</code>), along with the desired <code>width</code> and pad character.  <a href="#af8253dca0cbfe52ba97c96766bc240ad">More...</a><br /></td></tr>
+<tr class="separator:af8253dca0cbfe52ba97c96766bc240ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade675256d9e88682d4bebdcc4a57f86f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#ade675256d9e88682d4bebdcc4a57f86f">colr_mb_len</a> (const char *s, size_t length)</td></tr>
 <tr class="memdesc:ade675256d9e88682d4bebdcc4a57f86f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <code>mbrlen</code>, except it will return the length of the next N (<code>length</code>) multibyte characters in bytes.  <a href="#ade675256d9e88682d4bebdcc4a57f86f">More...</a><br /></td></tr>
 <tr class="separator:ade675256d9e88682d4bebdcc4a57f86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -471,6 +501,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a37cd9a8f2748629e68e9c41ffca557a9"><td class="memItemLeft" align="right" valign="top">regmatch_t **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a37cd9a8f2748629e68e9c41ffca557a9">colr_re_matches</a> (const char *s, regex_t *repattern)</td></tr>
 <tr class="memdesc:a37cd9a8f2748629e68e9c41ffca557a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all <code>regmatch_t</code> matches for regex pattern in a string (<code>char*</code>).  <a href="#a37cd9a8f2748629e68e9c41ffca557a9">More...</a><br /></td></tr>
 <tr class="separator:a37cd9a8f2748629e68e9c41ffca557a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69c5ed2adc1a709683514e8bce4b9e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char</a> (void *x, int width, char padchar)</td></tr>
+<tr class="memdesc:ad69c5ed2adc1a709683514e8bce4b9e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a right-justified (allocated) <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> when given a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or string (<code>char*</code>), along with the desired <code>width</code> and pad character.  <a href="#ad69c5ed2adc1a709683514e8bce4b9e0">More...</a><br /></td></tr>
+<tr class="separator:ad69c5ed2adc1a709683514e8bce4b9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a180c1ac4711df9fb025639c966f84727"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a180c1ac4711df9fb025639c966f84727">colr_set_locale</a> (void)</td></tr>
 <tr class="memdesc:a180c1ac4711df9fb025639c966f84727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the locale to <code>(LC_ALL, "")</code> if it hasn't already been set.  <a href="#a180c1ac4711df9fb025639c966f84727">More...</a><br /></td></tr>
 <tr class="separator:a180c1ac4711df9fb025639c966f84727"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -525,6 +558,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af5492da225ade4fd8fe71989826348b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#af5492da225ade4fd8fe71989826348b4">colr_str_is_digits</a> (const char *s)</td></tr>
 <tr class="memdesc:af5492da225ade4fd8fe71989826348b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether all characters in a string (<code>char*</code>) are digits.  <a href="#af5492da225ade4fd8fe71989826348b4">More...</a><br /></td></tr>
 <tr class="separator:af5492da225ade4fd8fe71989826348b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693cb034de88cd2d02aff5e1cd912395"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a693cb034de88cd2d02aff5e1cd912395">colr_str_is_empty</a> (const char *s)</td></tr>
+<tr class="memdesc:a693cb034de88cd2d02aff5e1cd912395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if a string empty.  <a href="#a693cb034de88cd2d02aff5e1cd912395">More...</a><br /></td></tr>
+<tr class="separator:a693cb034de88cd2d02aff5e1cd912395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5eedebae47b5d22dda709f833f23a256"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="colr_8c.html#a5eedebae47b5d22dda709f833f23a256">colr_str_ljust</a> (const char *s, int width, const char padchar)</td></tr>
 <tr class="memdesc:a5eedebae47b5d22dda709f833f23a256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left-justifies a string (<code>char*</code>), ignoring escape codes when measuring the width.  <a href="#a5eedebae47b5d22dda709f833f23a256">More...</a><br /></td></tr>
 <tr class="separator:a5eedebae47b5d22dda709f833f23a256"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -951,9 +987,9 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Joins ColorArgs, ColorTexts, and strings (<code>char*</code>) into one long string separated by it's first argument. </p>
-<p>This will free() any <code><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a></code>s, <code><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a></code>s, or <code><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a></code>s that are passed in. It is backing the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, and enables easy throw-away color values.</p>
+<p>This will free() any <code><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a></code>s, <code><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a></code>s, or <code><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a></code>s that are passed in. It is backing the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, and enables easy throw-away color values.</p>
 <p>Any plain strings that are passed in are left alone. It is up to the caller to free those. ColrC only manages the temporary Colr-based objects needed to build up these strings.</p>
-<p>You should use <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros instead.</p>
+<p>You should use <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros instead.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This is for internal use only.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1032,7 +1068,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Get the size in bytes needed to join an array of strings (<code>char*</code>), <code><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a></code>s, <code><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a></code>s, or <code><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a></code>s by another string (<code>char*</code>), <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>. </p>
-<p>This is used to allocate memory in the _colr_join_array() function.</p>
+<p>This is used to allocate memory in the <a class="el" href="colr_8c.html#a701126bd27c90fafa46152d9f9327b2f" title="Join an array of strings (char*), ColorArgs, or ColorTexts by another string (char*), ColorArg, or ColorText. ">colr_join_array()</a> function.</p>
 <dl class="section warning"><dt>Warning</dt><dd>This is for internal use only.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1646,7 +1682,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Create a <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> with ARGTYPE_NONE and ColorValue.type.TYPE_NONE. </p>
-<p>This is used to pass "empty" fore/back/style args to the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, where <code>NULL</code> may have a different meaning for users of the <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>.</p>
+<p>This is used to pass "empty" fore/back/style args to the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, where <code>NULL</code> may have a different meaning for users of the <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>(<a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a>){.type=ARGTYPE_NONE, .value.type=TYPE_NONE}</code></dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8c.html#a752355c2d96d35688d3756558f8421ba" title="Checks to see if a ColorArg is an empty placeholder. ">ColorArg_is_empty</a> </dd>
 <dd>
@@ -2599,6 +2635,8 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a>. </dd></dl>
 
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a41dff01c3b78be483310bd7189e45a6a">ColorText_set_center()</a>, <a class="el" href="colr_8h.html#a8ed4f6fb53f02c822484a2734ae5df89">ColorText_set_ljust()</a>, and <a class="el" href="colr_8h.html#a18d9c857353166d8844e38a2cdca9340">ColorText_set_rjust()</a>.</p>
+
 </div>
 </div>
 <a id="a6c35f6b47cc737744487d14d20241656"></a>
@@ -2667,6 +2705,57 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a178f3d7e1f40814160aee4074de494ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a178f3d7e1f40814160aee4074de494ab">&#9670;&nbsp;</a></span>ColorResult_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* ColorResult_center </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td>
+          <td class="paramname"><em>cres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Centers a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>'s string result and returns an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> (may be the same <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> if it is "empty"). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cres</td><td>A <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer to center. It will be <code>free</code>'d after this. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width in characters, or <code>0</code> for current terminal width. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <code>NULL</code> if <code>cres</code> is <code>NULL</code>. If <code>cres</code> is empty, it is simply returned.</p>
+<p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>.</p>
+
+</div>
+</div>
 <a id="ad4c95a667cdcd05fd108ddf20b9a7328"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4c95a667cdcd05fd108ddf20b9a7328">&#9670;&nbsp;</a></span>ColorResult_Colr()</h2>
 
@@ -2698,13 +2787,13 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">cres</td><td>An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> to colorize. This will be released to create the new <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>One or more <a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">fore()</a>, <a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">back()</a>, or <a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">style()</a> arguments (ColorArgs). The last argument must be _ColrLastArg. The allocated ColorArgs will be <code>free()</code>'d. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">...</td><td>One or more <a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">fore()</a>, <a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">back()</a>, or <a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">style()</a> arguments (ColorArgs). The last argument must be _ColrLastArg. The allocated ColorArgs will be <code>free()</code>'d. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <code>NULL</code> if <code>cres</code> is <code>NULL</code>.</p>
 <p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
-<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
@@ -2799,7 +2888,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust()</a>, <a class="el" href="colr_8h.html#a73ef863d2b899c15cb76672f651efd1a">ColorResult_rip_str()</a>, <a class="el" href="colr_8h.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
 
 </div>
 </div>
@@ -2856,11 +2945,40 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. The <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> may be "empty" if <code>s</code> is <code>NULL</code>.</p>
 <p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
-<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
 <p class="reference">Referenced by <a class="el" href="colr_8controls_8h.html#a539a34ed0f6d42af46f9eabed5dc96bb">Colr_cursor_hide()</a>, <a class="el" href="colr_8controls_8h.html#a26ca58da32fbb8b748be6d1f3be28991">Colr_cursor_show()</a>, <a class="el" href="colr_8controls_8h.html#a6f073609c3c701e1e94d57ffdf101b5c">Colr_erase_display()</a>, <a class="el" href="colr_8controls_8h.html#a5dbeee52b0527cf77523535dcb0cfb4f">Colr_erase_line()</a>, <a class="el" href="colr_8controls_8h.html#ad0a32ea7c15e5b40eda9d3277f7035d3">Colr_move_return()</a>, <a class="el" href="colr_8controls_8h.html#abf70c357e4cb15198020a6fbb29f09b8">Colr_pos_restore()</a>, and <a class="el" href="colr_8controls_8h.html#a5784c31cca2244df4005754b43185a5d">Colr_pos_save()</a>.</p>
+
+</div>
+</div>
+<a id="a941b8c848756dc9c9bfe49b023f8e44b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941b8c848756dc9c9bfe49b023f8e44b">&#9670;&nbsp;</a></span>ColorResult_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ColorResult_is_empty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>&#160;</td>
+          <td class="paramname"><em>cres</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks to see if a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> is "empty" (NULL or empty string). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cres</td><td><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if the <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> is "empty", otherwise <code>false</code>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center()</a>, <a class="el" href="colr_8h.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust()</a>, and <a class="el" href="colr_8h.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust()</a>.</p>
 
 </div>
 </div>
@@ -2891,7 +3009,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pointer is a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, otherwise <code>false</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>, <a class="el" href="colr_8h.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, and <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>.</p>
 
 </div>
 </div>
@@ -2925,6 +3043,57 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a368f400e37c3a974e8550de206e1d7b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a368f400e37c3a974e8550de206e1d7b1">&#9670;&nbsp;</a></span>ColorResult_ljust()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* ColorResult_ljust </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td>
+          <td class="paramname"><em>cres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Left-justifies a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>'s string result and returns an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> (may be the same <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> if it is "empty"). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cres</td><td>A <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer to center. It will be <code>free</code>'d after this. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width in characters, or <code>0</code> for current terminal width. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <code>NULL</code> if <code>cres</code> is <code>NULL</code>. If <code>cres</code> is empty, it is simply returned.</p>
+<p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>.</p>
+
+</div>
+</div>
 <a id="af752035c362c7c9ddb2e7f2f2305d509"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af752035c362c7c9ddb2e7f2f2305d509">&#9670;&nbsp;</a></span>ColorResult_new()</h2>
 
@@ -2951,7 +3120,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd>An initialized <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>. The <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> will be considered "empty" if <code>s</code> is <code>NULL</code> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#ac5c106f8d2e83b007a3fd633c3097c18">ColorResult_from_str()</a>, <a class="el" href="colr_8h.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str()</a>, <a class="el" href="colr_8controls_8h.html#a63f1bbac577f13c42ecc0358d179cbcd">Colr_move_back()</a>, <a class="el" href="colr_8controls_8h.html#ad6ed55c687b39c03f157796c9301557d">Colr_move_column()</a>, <a class="el" href="colr_8controls_8h.html#a199f6e456028c66c2429ec862f9ac5a0">Colr_move_down()</a>, <a class="el" href="colr_8controls_8h.html#a1d75da8b76f80e26cd02a31517a79861">Colr_move_forward()</a>, <a class="el" href="colr_8controls_8h.html#a0a2ecf5b0f26e46db5277e864b27bca5">Colr_move_next()</a>, <a class="el" href="colr_8controls_8h.html#ac43155350dda523b5aeedb50e02104fa">Colr_move_pos()</a>, <a class="el" href="colr_8controls_8h.html#a585d85a38f63bfae83026e36428f43c4">Colr_move_prev()</a>, <a class="el" href="colr_8controls_8h.html#a3808823bc9698483636970d6cdd02acb">Colr_move_up()</a>, <a class="el" href="colr_8controls_8h.html#ae2201d43b84b8060cfb5e00f32110f56">Colr_scroll_down()</a>, and <a class="el" href="colr_8controls_8h.html#ac0a2a79d8106fad5ad1ba8821b8591ae">Colr_scroll_up()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#ac5c106f8d2e83b007a3fd633c3097c18">ColorResult_from_str()</a>, <a class="el" href="colr_8h.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust()</a>, <a class="el" href="colr_8h.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust()</a>, <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>, <a class="el" href="colr_8h.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str()</a>, <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>, <a class="el" href="colr_8controls_8h.html#a63f1bbac577f13c42ecc0358d179cbcd">Colr_move_back()</a>, <a class="el" href="colr_8controls_8h.html#ad6ed55c687b39c03f157796c9301557d">Colr_move_column()</a>, <a class="el" href="colr_8controls_8h.html#a199f6e456028c66c2429ec862f9ac5a0">Colr_move_down()</a>, <a class="el" href="colr_8controls_8h.html#a1d75da8b76f80e26cd02a31517a79861">Colr_move_forward()</a>, <a class="el" href="colr_8controls_8h.html#a0a2ecf5b0f26e46db5277e864b27bca5">Colr_move_next()</a>, <a class="el" href="colr_8controls_8h.html#ac43155350dda523b5aeedb50e02104fa">Colr_move_pos()</a>, <a class="el" href="colr_8controls_8h.html#a585d85a38f63bfae83026e36428f43c4">Colr_move_prev()</a>, <a class="el" href="colr_8controls_8h.html#a3808823bc9698483636970d6cdd02acb">Colr_move_up()</a>, <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>, <a class="el" href="colr_8controls_8h.html#ae2201d43b84b8060cfb5e00f32110f56">Colr_scroll_down()</a>, and <a class="el" href="colr_8controls_8h.html#ac0a2a79d8106fad5ad1ba8821b8591ae">Colr_scroll_up()</a>.</p>
 
 </div>
 </div>
@@ -2989,6 +3158,88 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a73ef863d2b899c15cb76672f651efd1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ef863d2b899c15cb76672f651efd1a">&#9670;&nbsp;</a></span>ColorResult_rip_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* ColorResult_rip_str </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td>
+          <td class="paramname"><em>cres</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the string from a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer, but frees the <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> itself (without destroying the string (<code>char*</code>)). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cres</td><td><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> to get the string from and <code>free()</code>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">The string (<code>char*</code>) from the <code>result</code> member.</p>
+<p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
+<p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
+</dd></dl>
+
+</div>
+</div>
+<a id="a1423abeaa2e93b16a35a5084c3de290b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1423abeaa2e93b16a35a5084c3de290b">&#9670;&nbsp;</a></span>ColorResult_rjust()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* ColorResult_rjust </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a> *&#160;</td>
+          <td class="paramname"><em>cres</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Right-justifies a <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>'s string result and returns an allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> (may be the same <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> if it is "empty"). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">cres</td><td>A <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer to center. It will be <code>free</code>'d after this. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width in characters, or <code>0</code> for current terminal width. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <code>NULL</code> if <code>cres</code> is <code>NULL</code>. If <code>cres</code> is empty, it is simply returned.</p>
+<p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
+<p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>.</p>
+
+</div>
+</div>
 <a id="a5f5304067f9d673ce5b86ddba2a8807b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f5304067f9d673ce5b86ddba2a8807b">&#9670;&nbsp;</a></span>ColorResult_to_ptr()</h2>
 
@@ -3015,12 +3266,12 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>.</p>
 <p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
-<p>If used inside of the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>.</p>
+<p>If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>.</p>
 <p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a91d92286745806229c0369c20edf641c">ColorResult_from_stra()</a>, <a class="el" href="colr_8h.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str()</a>, <a class="el" href="colr_8controls_8h.html#a63f1bbac577f13c42ecc0358d179cbcd">Colr_move_back()</a>, <a class="el" href="colr_8controls_8h.html#ad6ed55c687b39c03f157796c9301557d">Colr_move_column()</a>, <a class="el" href="colr_8controls_8h.html#a199f6e456028c66c2429ec862f9ac5a0">Colr_move_down()</a>, <a class="el" href="colr_8controls_8h.html#a1d75da8b76f80e26cd02a31517a79861">Colr_move_forward()</a>, <a class="el" href="colr_8controls_8h.html#a0a2ecf5b0f26e46db5277e864b27bca5">Colr_move_next()</a>, <a class="el" href="colr_8controls_8h.html#ac43155350dda523b5aeedb50e02104fa">Colr_move_pos()</a>, <a class="el" href="colr_8controls_8h.html#a585d85a38f63bfae83026e36428f43c4">Colr_move_prev()</a>, <a class="el" href="colr_8controls_8h.html#a3808823bc9698483636970d6cdd02acb">Colr_move_up()</a>, <a class="el" href="colr_8controls_8h.html#ae2201d43b84b8060cfb5e00f32110f56">Colr_scroll_down()</a>, and <a class="el" href="colr_8controls_8h.html#ac0a2a79d8106fad5ad1ba8821b8591ae">Colr_scroll_up()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a91d92286745806229c0369c20edf641c">ColorResult_from_stra()</a>, <a class="el" href="colr_8h.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust()</a>, <a class="el" href="colr_8h.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust()</a>, <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>, <a class="el" href="colr_8h.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str()</a>, <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>, <a class="el" href="colr_8controls_8h.html#a63f1bbac577f13c42ecc0358d179cbcd">Colr_move_back()</a>, <a class="el" href="colr_8controls_8h.html#ad6ed55c687b39c03f157796c9301557d">Colr_move_column()</a>, <a class="el" href="colr_8controls_8h.html#a199f6e456028c66c2429ec862f9ac5a0">Colr_move_down()</a>, <a class="el" href="colr_8controls_8h.html#a1d75da8b76f80e26cd02a31517a79861">Colr_move_forward()</a>, <a class="el" href="colr_8controls_8h.html#a0a2ecf5b0f26e46db5277e864b27bca5">Colr_move_next()</a>, <a class="el" href="colr_8controls_8h.html#ac43155350dda523b5aeedb50e02104fa">Colr_move_pos()</a>, <a class="el" href="colr_8controls_8h.html#a585d85a38f63bfae83026e36428f43c4">Colr_move_prev()</a>, <a class="el" href="colr_8controls_8h.html#a3808823bc9698483636970d6cdd02acb">Colr_move_up()</a>, <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>, <a class="el" href="colr_8controls_8h.html#ae2201d43b84b8060cfb5e00f32110f56">Colr_scroll_down()</a>, and <a class="el" href="colr_8controls_8h.html#ac0a2a79d8106fad5ad1ba8821b8591ae">Colr_scroll_up()</a>.</p>
 
 </div>
 </div>
@@ -3051,7 +3302,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd>A stringified-version if this <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, which happens to be the <code>.result</code> member. <em>If you free the result of this function, the original string used to create the <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> will be lost</em>. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust()</a>, <a class="el" href="colr_8h.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a53fa120c1074c836f65b4aace67d0c83">colr_str_replace_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a136d15edf2f804c89cee619bb811ef3a">colr_str_replace_ColorResult()</a>, <a class="el" href="colr_8h.html#a3e18a36736e5451529e80443cfb7b1fc">colr_str_replace_re_all_ColorResult()</a>, <a class="el" href="colr_8h.html#a0376bed13e55acaca37e52c382044e1d">colr_str_replace_re_ColorResult()</a>, <a class="el" href="colr_8h.html#ac092f944961dddc6574a6c55e6e878b0">colr_str_replace_re_match_ColorResult()</a>, <a class="el" href="colr_8h.html#a4d4bb71015338108d86fcf47317cc5ff">colr_str_replace_re_matches_ColorResult()</a>, <a class="el" href="colr_8h.html#af083c2e1867ecaad0ae38a1324c915ac">colr_str_replace_re_pat_all_ColorResult()</a>, and <a class="el" href="colr_8h.html#abcd756c82acab9505343b614d52c0b19">colr_str_replace_re_pat_ColorResult()</a>.</p>
 
 </div>
 </div>
@@ -3105,7 +3356,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a73789c11eaeb5a36b5f97556103a108d">colr_str_replace_all_ColorText()</a>, <a class="el" href="colr_8h.html#aaee8d79a90917974ee4537705e34fd76">colr_str_replace_ColorText()</a>, <a class="el" href="colr_8h.html#a747e31fa3d8961e0bdd11eabd673accc">colr_str_replace_re_all_ColorText()</a>, <a class="el" href="colr_8h.html#ab8d6a10f70b435559656bbad0090d92d">colr_str_replace_re_ColorText()</a>, <a class="el" href="colr_8h.html#a4d954398333472c1436f9bc051f46392">colr_str_replace_re_match_ColorText()</a>, <a class="el" href="colr_8h.html#aa4fe38cc205cbd49b2f8477744574294">colr_str_replace_re_matches_ColorText()</a>, <a class="el" href="colr_8h.html#ab9c4a5c34b26473dc45f93ce2c66faf1">colr_str_replace_re_pat_all_ColorText()</a>, and <a class="el" href="colr_8h.html#a6f8b04b6d851f26304183d1111b8f0dc">colr_str_replace_re_pat_ColorText()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>, <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>, <a class="el" href="colr_8h.html#a73789c11eaeb5a36b5f97556103a108d">colr_str_replace_all_ColorText()</a>, <a class="el" href="colr_8h.html#aaee8d79a90917974ee4537705e34fd76">colr_str_replace_ColorText()</a>, <a class="el" href="colr_8h.html#a747e31fa3d8961e0bdd11eabd673accc">colr_str_replace_re_all_ColorText()</a>, <a class="el" href="colr_8h.html#ab8d6a10f70b435559656bbad0090d92d">colr_str_replace_re_ColorText()</a>, <a class="el" href="colr_8h.html#a4d954398333472c1436f9bc051f46392">colr_str_replace_re_match_ColorText()</a>, <a class="el" href="colr_8h.html#aa4fe38cc205cbd49b2f8477744574294">colr_str_replace_re_matches_ColorText()</a>, <a class="el" href="colr_8h.html#ab9c4a5c34b26473dc45f93ce2c66faf1">colr_str_replace_re_pat_all_ColorText()</a>, and <a class="el" href="colr_8h.html#a6f8b04b6d851f26304183d1111b8f0dc">colr_str_replace_re_pat_ColorText()</a>.</p>
 
 </div>
 </div>
@@ -3346,7 +3597,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if the pointer is a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, otherwise <code>false</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#aaa888f1b31eb40ec7d252d3ee9175d76">_colr_free()</a>, <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a6d47ac6ee2a59e1c976cf2838545aa25">_colr_join_array_length()</a>, <a class="el" href="colr_8h.html#ac49c3a33d328ebaf2b0564d5a9b1d4ec">_colr_join_arrayn_size()</a>, <a class="el" href="colr_8h.html#ab0be451277fc7e39aee0aa409c9d3f0c">_colr_ptr_length()</a>, <a class="el" href="colr_8h.html#a30cac3017a6ea8c78277882554c9419f">_colr_ptr_repr()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>, <a class="el" href="colr_8h.html#a18e06ee5b32cd583c71ecff7d6c18270">colr_is_colr_ptr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, and <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>.</p>
 
 </div>
 </div>
@@ -3410,6 +3661,54 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a41dff01c3b78be483310bd7189e45a6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41dff01c3b78be483310bd7189e45a6a">&#9670;&nbsp;</a></span>ColorText_set_center()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorText">ColorText</a>* ColorText_set_center </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorText">ColorText</a> *&#160;</td>
+          <td class="paramname"><em>ctext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modify a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to include a <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a> member to center-justify text when it is converted into a string. </p>
+<p>This is to facilitate the justification macros. You can create a justified <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> using ColorText_center and friends.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctext</td><td>The <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to set the justification method for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width for the justification. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same pointer that was given as <code>ctext</code>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>.</p>
+
+</div>
+</div>
 <a id="ab408d87cce896acccb75357acca8ade4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab408d87cce896acccb75357acca8ade4">&#9670;&nbsp;</a></span>ColorText_set_just()</h2>
 
@@ -3447,6 +3746,102 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The same pointer that was given as <code>ctext</code>.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
+
+</div>
+</div>
+<a id="a8ed4f6fb53f02c822484a2734ae5df89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed4f6fb53f02c822484a2734ae5df89">&#9670;&nbsp;</a></span>ColorText_set_ljust()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorText">ColorText</a>* ColorText_set_ljust </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorText">ColorText</a> *&#160;</td>
+          <td class="paramname"><em>ctext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modify a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to include a <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a> member to left-justify text when it is converted into a string. </p>
+<p>This is to facilitate the justification macros. You can create a justified <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> using ColorText_ljust and friends.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctext</td><td>The <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to set the justification method for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width for the justification. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same pointer that was given as <code>ctext</code>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>.</p>
+
+</div>
+</div>
+<a id="a18d9c857353166d8844e38a2cdca9340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d9c857353166d8844e38a2cdca9340">&#9670;&nbsp;</a></span>ColorText_set_rjust()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorText">ColorText</a>* ColorText_set_rjust </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="colr_8h.html#structColorText">ColorText</a> *&#160;</td>
+          <td class="paramname"><em>ctext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Modify a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to include a <a class="el" href="colr_8h.html#structColorJustify" title="Holds a string justification method, width, and padding character for ColorTexts. ...">ColorJustify</a> member to right-justify text when it is converted into a string. </p>
+<p>This is to facilitate the justification macros. You can create a justified <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> using ColorText_rjust and friends.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">ctext</td><td>The <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> to set the justification method for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width for the justification. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The same pointer that was given as <code>ctext</code>. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>.</p>
 
 </div>
 </div>
@@ -3522,7 +3917,8 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><p class="startdd">Pointer to a heap-allocated <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>.</p>
 <p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
-<p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
+<p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
@@ -3557,7 +3953,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#a73789c11eaeb5a36b5f97556103a108d">colr_str_replace_all_ColorText()</a>, <a class="el" href="colr_8h.html#aaee8d79a90917974ee4537705e34fd76">colr_str_replace_ColorText()</a>, <a class="el" href="colr_8h.html#a747e31fa3d8961e0bdd11eabd673accc">colr_str_replace_re_all_ColorText()</a>, <a class="el" href="colr_8h.html#ab8d6a10f70b435559656bbad0090d92d">colr_str_replace_re_ColorText()</a>, <a class="el" href="colr_8h.html#a4d954398333472c1436f9bc051f46392">colr_str_replace_re_match_ColorText()</a>, <a class="el" href="colr_8h.html#aa4fe38cc205cbd49b2f8477744574294">colr_str_replace_re_matches_ColorText()</a>, <a class="el" href="colr_8h.html#ab9c4a5c34b26473dc45f93ce2c66faf1">colr_str_replace_re_pat_all_ColorText()</a>, and <a class="el" href="colr_8h.html#a6f8b04b6d851f26304183d1111b8f0dc">colr_str_replace_re_pat_ColorText()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a4227a65824fdd699a25d3200706c9e9e">_colr_join()</a>, <a class="el" href="colr_8h.html#a0d97f9b535a69642b926b38dce30b180">_colr_ptr_to_str()</a>, <a class="el" href="colr_8h.html#ad4c95a667cdcd05fd108ddf20b9a7328">ColorResult_Colr()</a>, <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>, <a class="el" href="colr_8h.html#a71fcf08ad36d4424790e275d973445fc">colr_join_arrayn()</a>, <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>, <a class="el" href="colr_8h.html#a73789c11eaeb5a36b5f97556103a108d">colr_str_replace_all_ColorText()</a>, <a class="el" href="colr_8h.html#aaee8d79a90917974ee4537705e34fd76">colr_str_replace_ColorText()</a>, <a class="el" href="colr_8h.html#a747e31fa3d8961e0bdd11eabd673accc">colr_str_replace_re_all_ColorText()</a>, <a class="el" href="colr_8h.html#ab8d6a10f70b435559656bbad0090d92d">colr_str_replace_re_ColorText()</a>, <a class="el" href="colr_8h.html#a4d954398333472c1436f9bc051f46392">colr_str_replace_re_match_ColorText()</a>, <a class="el" href="colr_8h.html#aa4fe38cc205cbd49b2f8477744574294">colr_str_replace_re_matches_ColorText()</a>, <a class="el" href="colr_8h.html#ab9c4a5c34b26473dc45f93ce2c66faf1">colr_str_replace_re_pat_all_ColorText()</a>, and <a class="el" href="colr_8h.html#a6f8b04b6d851f26304183d1111b8f0dc">colr_str_replace_re_pat_ColorText()</a>.</p>
 
 </div>
 </div>
@@ -3779,7 +4175,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 
 <p>Create an "empty" <a class="el" href="colr_8h.html#structColorValue" title="Holds a color type and it&#39;s value. ">ColorValue</a>. </p>
-<p>This is used with <a class="el" href="colr_8c.html#af838f8479681d809beb868b2e1b547e7" title="Create a ColorArg with ARGTYPE_NONE and ColorValue.type.TYPE_NONE. ">ColorArg_empty()</a> to build ColorArgs that don't do anything, where using <code>NULL</code> has a different meaning inside the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros.</p>
+<p>This is used with <a class="el" href="colr_8c.html#af838f8479681d809beb868b2e1b547e7" title="Create a ColorArg with ARGTYPE_NONE and ColorValue.type.TYPE_NONE. ">ColorArg_empty()</a> to build ColorArgs that don't do anything, where using <code>NULL</code> has a different meaning inside the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>(<a class="el" href="colr_8h.html#structColorValue" title="Holds a color type and it&#39;s value. ">ColorValue</a>){.type=TYPE_NONE, .basic=0, .ext=0, .rgb=(<a class="el" href="colr_8h.html#structRGB" title="Container for RGB values. ">RGB</a>){0, 0, 0}}</code></dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> </dd>
 <dd>
@@ -4472,6 +4868,55 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a5b21f46594a02e237c4578d0e029fd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b21f46594a02e237c4578d0e029fd25">&#9670;&nbsp;</a></span>Colr_center_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* Colr_center_char </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a center-justified (allocated) <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> when given a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or string (<code>char*</code>), along with the desired <code>width</code> and pad character. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer, or string (<code>char*</code>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width for the justified text, or <code>0</code> to use the terminal width. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> with the justified text as the <code>result</code> member.</p>
+<p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
+<p>If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>.</p>
+<p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
+</dd></dl>
+
+</div>
+</div>
 <a id="a7f1ea562310969b7efa8711a843f103c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f1ea562310969b7efa8711a843f103c">&#9670;&nbsp;</a></span>colr_char_escape_char()</h2>
 
@@ -4796,7 +5241,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or <code>NULL</code> if <code>fmt</code> is <code>NULL</code>.</p>
 <p><em>If allocation fails, <code>NULL</code> is returned</em>.</p>
-<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros will automatically free(). ">Colr_cat()</a>, and <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a> macros, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
+<p class="enddd">If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>. </p>
 </dd></dl>
 <div class="examplecode"> <div class="examplecode-header"> <a href="#Colr_fmt_str-example" id="Colr_fmt_str-example" class="diamond-bullet">◆&#160;</a> Colr_fmt_str example: </div><div class="fragment"><div class="line"><span class="keywordtype">int</span> i = 2600;</div><div class="line"><span class="keywordtype">double</span> d = 1.337;</div><div class="line"><a class="code" href="colr_8h.html#af050c0377cbd1960fa057dc160da3c34">colr_puts</a>(<a class="code" href="colr_8c.html#a008af1b6ab6db4d4dd98033471506f1e">Colr_fmt_str</a>(<span class="stringliteral">&quot;&lt;%d&gt; &lt;%0.3f&gt;&quot;</span>, i, d));</div></div><!-- fragment --> </div> 
 </div>
@@ -4984,6 +5429,56 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p class="reference">Referenced by <a class="el" href="colr_8h.html#a701126bd27c90fafa46152d9f9327b2f">colr_join_array()</a>.</p>
 
+</div>
+</div>
+<a id="af8253dca0cbfe52ba97c96766bc240ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8253dca0cbfe52ba97c96766bc240ad">&#9670;&nbsp;</a></span>Colr_ljust_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* Colr_ljust_char </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a left-justified (allocated) <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> when given a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or string (<code>char*</code>), along with the desired <code>width</code> and pad character. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer, or string (<code>char*</code>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width for the justified text, or <code>0</code> to use the terminal width. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> with the justified text as the <code>result</code> member.</p>
+<p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
+<p>If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>.</p>
+<p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
+</dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="Colr_example_8c-example.html#a6">Colr_example.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a id="ade675256d9e88682d4bebdcc4a57f86f"></a>
@@ -5207,6 +5702,55 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="ad69c5ed2adc1a709683514e8bce4b9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad69c5ed2adc1a709683514e8bce4b9e0">&#9670;&nbsp;</a></span>Colr_rjust_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="colr_8h.html#structColorResult">ColorResult</a>* Colr_rjust_char </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>padchar</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns a right-justified (allocated) <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> when given a <a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a>, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a>, or string (<code>char*</code>), along with the desired <code>width</code> and pad character. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td><a class="el" href="colr_8h.html#structColorText" title="Holds a string of text, and optional fore, back, and style ColorArgs. ">ColorText</a> pointer, <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> pointer, or string (<code>char*</code>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Maximum width for the justified text, or <code>0</code> to use the terminal width. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">padchar</td><td>Character to pad with, or <code>0</code> for `' '` (space).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><p class="startdd">An allocated <a class="el" href="colr_8h.html#structColorResult" title="Holds a string (char*) that was definitely allocated by Colr. ">ColorResult</a> with the justified text as the <code>result</code> member.</p>
+<p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
+<p>If used inside of the <a class="el" href="colr_8h.html#ade1c77f81a0fd49f7895598cbd9ac76c" title="Returns a heap-allocated ColorText struct that can be used by itself, or with the colr_cat()...">Colr()</a>, <a class="el" href="colr_8h.html#a8e2c8bf2819cb36b1a34396a65b51faa" title="Join ColorArg pointers, ColorResult pointers, ColorText pointers, and strings into one long string...">colr_cat()</a>, <a class="el" href="colr_8h.html#ae8cc35d2d3a15c9c22ebb0a0835c92f0" title="Join ColorArg pointers, ColorText pointers, and strings by another ColorArg pointer, ColorText pointer, or string. ">colr_join()</a>, <a class="el" href="colr_8h.html#a9c6a8a9f484ac09c39e5f76bba61f465" title="Like colr_cat(), but returns an allocated ColorResult that the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros will automatically free(). ">Colr_cat()</a>, <a class="el" href="colr_8h.html#a4d87ca8cb5460146965bd85ec82f293e" title="Joins Colr objects and strings, exactly like colr_join(), but returns an allocated ColorResult that t...">Colr_join()</a>, <a class="el" href="colr_8h.html#ad3a15fe309942b9fecfc4fe39db0c377" title="Like Colr_center_char, it center-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (s...">Colr_center()</a>, <a class="el" href="colr_8h.html#a88247213bdd478c7472cdf89c9c7ce82" title="Like Colr_ljust_char, it left-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spac...">Colr_ljust()</a>, and <a class="el" href="colr_8h.html#aaed5edc918780104091017bc30874be8" title="Like Colr_rjust_char, it right-justifies ColrC objects and strings (char*), except it uses `&#39; &#39;` (spa...">Colr_rjust()</a> macros, or their backing functions, <em>they will <code>free()</code> the result</em>. Otherwise, <em>you are responsible for calling <code>free()</code></em>.</p>
+<p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
+</dd></dl>
+
+</div>
+</div>
 <a id="a180c1ac4711df9fb025639c966f84727"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a180c1ac4711df9fb025639c966f84727">&#9670;&nbsp;</a></span>colr_set_locale()</h2>
 
@@ -5359,7 +5903,7 @@ const size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dd>
 <a class="el" href="colr_8c.html#ae4c11bb5b3b1bb2848bb16aee39763b2" title="Attempts to retrieve the row/column size of the terminal and returns a TermSize. ">colr_term_size</a></dd></dl>
 <div class="examplecode"> <div class="examplecode-header"> <a href="#colr_str_center-example" id="colr_str_center-example" class="diamond-bullet">◆&#160;</a> colr_str_center example: </div><div class="fragment"><div class="line"><span class="keywordtype">char</span>* colorized = <a class="code" href="colr_8h.html#a753093cd4c872eed4b77feaa7816212b">colr</a>(<span class="stringliteral">&quot;This.&quot;</span>, <a class="code" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f">fore</a>(RED), <a class="code" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8">back</a>(WHITE));</div><div class="line"><span class="keywordtype">char</span>* justified = <a class="code" href="colr_8c.html#a1a8345393e635e1c5e148473bdce292d">colr_str_center</a>(colorized, 9, <span class="charliteral">&#39; &#39;</span>);</div><div class="line">free(colorized);</div><div class="line"><span class="comment">// The string still has codes, but only 4 spaces were added.</span></div><div class="line">assert(<a class="code" href="colr_8c.html#ac23328cead6a65d7b3ef2c2ca48d11ce">colr_str_starts_with</a>(justified, <span class="stringliteral">&quot;  &quot;</span>));</div><div class="line">assert(<a class="code" href="colr_8c.html#a7dd712bd8253271f0c88158db791c8bf">colr_str_ends_with</a>(justified, <span class="stringliteral">&quot;  &quot;</span>));</div><div class="line"><span class="comment">// It was &quot;justified&quot; to 9 characters long, but it is well over that.</span></div><div class="line">assert(strlen(justified) &gt; 9);</div><div class="line">printf(<span class="stringliteral">&quot;&#39;%s&#39;\n&quot;</span>, justified);</div><div class="line">free(justified);</div></div><!-- fragment --> </div> 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center()</a>, <a class="el" href="colr_8h.html#a5b21f46594a02e237c4578d0e029fd25">Colr_center_char()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
 
 </div>
 </div>
@@ -5771,7 +6315,7 @@ False if either is NULL, or the string doesn't end with the suffix. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>The string to check. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">carg</td><td>The <a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">fore()</a>, <a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">back()</a>, or <a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the colr_cat(), colr_join(), Colr(), Colr_cat(), and Colr_join() macros. ">style()</a> <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> to check for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">carg</td><td>The <a class="el" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f" title="Create a fore color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">fore()</a>, <a class="el" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8" title="Create a back color suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">back()</a>, or <a class="el" href="colr_8h.html#a7592d374ee178fd8ac19d8dabbb83662" title="Create a style suitable for use with the Colr(), colr_cat(), colr_join(), Colr_cat(), Colr_join(), Colr_center(), Colr_ljust(), and Colr_rjust() macros. ">style()</a> <a class="el" href="colr_8h.html#structColorArg" title="Holds an ArgType, and a ColorValue. ">ColorArg</a> to check for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5920,6 +6464,34 @@ False if either is NULL, or the string doesn't end with the suffix. </dd></dl>
 
 </div>
 </div>
+<a id="a693cb034de88cd2d02aff5e1cd912395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693cb034de88cd2d02aff5e1cd912395">&#9670;&nbsp;</a></span>colr_str_is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool colr_str_is_empty </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks to see if a string empty. </p>
+<p>This for compatibility with the <a class="el" href="colr_8h.html#a0819ea3109493d7fe1656a7cadaca7d5" title="Calls the &lt;type&gt;is_empty functions for the supported types. ">colr_is_empty()</a> macro.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>The string to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> if <code>s</code> is an "empty" string or <code>NULL</code>, otherwise <code>false</code>. </dd></dl>
+
+</div>
+</div>
 <a id="a5eedebae47b5d22dda709f833f23a256"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5eedebae47b5d22dda709f833f23a256">&#9670;&nbsp;</a></span>colr_str_ljust()</h2>
 
@@ -5973,7 +6545,7 @@ False if either is NULL, or the string doesn't end with the suffix. </dd></dl>
 <dd>
 <a class="el" href="colr_8c.html#ae4c11bb5b3b1bb2848bb16aee39763b2" title="Attempts to retrieve the row/column size of the terminal and returns a TermSize. ">colr_term_size</a></dd></dl>
 <div class="examplecode"> <div class="examplecode-header"> <a href="#colr_str_ljust-example" id="colr_str_ljust-example" class="diamond-bullet">◆&#160;</a> colr_str_ljust example: </div><div class="fragment"><div class="line"><span class="keywordtype">char</span>* colorized = <a class="code" href="colr_8h.html#a753093cd4c872eed4b77feaa7816212b">colr</a>(<span class="stringliteral">&quot;This.&quot;</span>, <a class="code" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f">fore</a>(RED), <a class="code" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8">back</a>(WHITE));</div><div class="line"><span class="keywordtype">char</span>* justified = <a class="code" href="colr_8c.html#a5eedebae47b5d22dda709f833f23a256">colr_str_ljust</a>(colorized, 8, <span class="charliteral">&#39; &#39;</span>);</div><div class="line">free(colorized);</div><div class="line"><span class="comment">// The string still has codes, but only 3 spaces were added.</span></div><div class="line">assert(<a class="code" href="colr_8c.html#a7dd712bd8253271f0c88158db791c8bf">colr_str_ends_with</a>(justified, <span class="stringliteral">&quot;   &quot;</span>));</div><div class="line"><span class="comment">// It was &quot;justified&quot; to 8 characters long, but it is well over that.</span></div><div class="line">assert(strlen(justified) &gt; 8);</div><div class="line">printf(<span class="stringliteral">&quot;&#39;%s&#39;\n&quot;</span>, justified);</div><div class="line">free(justified);</div></div><!-- fragment --> </div> 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust()</a>, <a class="el" href="colr_8h.html#af8253dca0cbfe52ba97c96766bc240ad">Colr_ljust_char()</a>, and <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
 
 </div>
 </div>
@@ -8159,7 +8731,7 @@ False if either is NULL, or the string doesn't end with the suffix. </dd></dl>
 <dd>
 <a class="el" href="colr_8c.html#ae4c11bb5b3b1bb2848bb16aee39763b2" title="Attempts to retrieve the row/column size of the terminal and returns a TermSize. ">colr_term_size</a></dd></dl>
 <div class="examplecode"> <div class="examplecode-header"> <a href="#colr_str_rjust-example" id="colr_str_rjust-example" class="diamond-bullet">◆&#160;</a> colr_str_rjust example: </div><div class="fragment"><div class="line"><span class="keywordtype">char</span>* colorized = <a class="code" href="colr_8h.html#a753093cd4c872eed4b77feaa7816212b">colr</a>(<span class="stringliteral">&quot;This.&quot;</span>, <a class="code" href="colr_8h.html#a19d8b61303404007a3224be0f8296c3f">fore</a>(RED), <a class="code" href="colr_8h.html#a947915cd251af5099f6a9232836b12d8">back</a>(WHITE));</div><div class="line"><span class="keywordtype">char</span>* justified = <a class="code" href="colr_8c.html#acc75e3bf729168f9ac204ef0a1708d46">colr_str_rjust</a>(colorized, 8, <span class="charliteral">&#39; &#39;</span>);</div><div class="line">free(colorized);</div><div class="line"><span class="comment">// The string still has codes, but only 3 spaces were added.</span></div><div class="line">assert(<a class="code" href="colr_8c.html#ac23328cead6a65d7b3ef2c2ca48d11ce">colr_str_starts_with</a>(justified, <span class="stringliteral">&quot;   &quot;</span>));</div><div class="line"><span class="comment">// It was &quot;justified&quot; to 8 characters long, but it is well over that.</span></div><div class="line">assert(strlen(justified) &gt; 8);</div><div class="line">printf(<span class="stringliteral">&quot;&#39;%s&#39;\n&quot;</span>, justified);</div><div class="line">free(justified);</div></div><!-- fragment --> </div> 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust()</a>, <a class="el" href="colr_8h.html#a34c359a48f811316d765b7abef1ea8f4">colr_printf_handler()</a>, and <a class="el" href="colr_8h.html#ad69c5ed2adc1a709683514e8bce4b9e0">Colr_rjust_char()</a>.</p>
 
 </div>
 </div>
@@ -8295,7 +8867,8 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
 <p>For instance, <a class="el" href="colr_8h.html#structRGB" title="Container for RGB values. ">RGB</a> is supported in <code>konsole</code>, but not in <code>xterm</code> or <code>linux</code> ttys. Using <a class="el" href="colr_8h.html#structRGB" title="Container for RGB values. ">RGB</a> codes in <code>xterm</code> makes the colors appear as though a 256-color value was used (closest matching value, like <a class="el" href="colr_8c.html#ab4576c531151e398b7ecede2e30df70d" title="Convert an RGB value into it&#39;s nearest terminal-friendly RGB value. ">RGB_to_term_RGB()</a>). Using <a class="el" href="colr_8h.html#structRGB" title="Container for RGB values. ">RGB</a> codes in a simpler <code>linux</code> tty makes them appear as though an 8-color value was used. Very ugly, but not a disaster.</p>
 <p>I haven't seen a <em>modern</em> linux terminal spew garbage across the screen from using <a class="el" href="colr_8h.html#structRGB" title="Container for RGB values. ">RGB</a> codes when they are not supported, but I could be wrong. I would like to see that terminal if you know of one.</p>
 <dl class="section return"><dt>Returns</dt><dd><code>true</code> if 24-bit (true color, or "rgb") support is detected, otherwise <code>false</code>. </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="colr_cat_example_8c-example.html#a12">colr_cat_example.c</a>.</dd>
+</dl>
 <p class="reference">Referenced by <a class="el" href="colr_8h.html#ac2aab28fe264005a5d17b888b542610b">colr_supports_rgb_static()</a>.</p>
 
 </div>
@@ -8341,7 +8914,7 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
 <p>Attempts to retrieve the row/column size of the terminal and returns a <a class="el" href="colr_8h.html#structTermSize" title="Holds a terminal size, usually retrieved with colr_term_size(). ">TermSize</a>. </p>
 <p>If the call fails, the environment variables <code>LINES</code> and <code>COLUMNS</code> are checked. If that fails, a default <code><a class="el" href="colr_8h.html#structTermSize" title="Holds a terminal size, usually retrieved with colr_term_size(). ">TermSize</a></code> struct is returned: </p><div class="fragment"><div class="line">(<a class="code" href="colr_8h.html#structTermSize">TermSize</a>){.rows=35, .columns=80}</div></div><!-- fragment --><dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="colr_8h.html#structTermSize" title="Holds a terminal size, usually retrieved with colr_term_size(). ">TermSize</a> struct with terminal size information. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="colr_8h.html#a412833a097b050c8ee99874c733bd030">ColorText_length()</a>, <a class="el" href="colr_8h.html#a1a8345393e635e1c5e148473bdce292d">colr_str_center()</a>, <a class="el" href="colr_8h.html#a5eedebae47b5d22dda709f833f23a256">colr_str_ljust()</a>, and <a class="el" href="colr_8h.html#acc75e3bf729168f9ac204ef0a1708d46">colr_str_rjust()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="colr_8h.html#a178f3d7e1f40814160aee4074de494ab">ColorResult_center()</a>, <a class="el" href="colr_8h.html#a368f400e37c3a974e8550de206e1d7b1">ColorResult_ljust()</a>, <a class="el" href="colr_8h.html#a1423abeaa2e93b16a35a5084c3de290b">ColorResult_rjust()</a>, <a class="el" href="colr_8h.html#a412833a097b050c8ee99874c733bd030">ColorText_length()</a>, <a class="el" href="colr_8h.html#a1a8345393e635e1c5e148473bdce292d">colr_str_center()</a>, <a class="el" href="colr_8h.html#a5eedebae47b5d22dda709f833f23a256">colr_str_ljust()</a>, and <a class="el" href="colr_8h.html#acc75e3bf729168f9ac204ef0a1708d46">colr_str_rjust()</a>.</p>
 
 </div>
 </div>
@@ -9292,7 +9865,8 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
 <p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
 <p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
 </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="colr_cat_example_8c-example.html#a13">colr_cat_example.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a id="a5a24d379435d64d1212858b173e6f9a7"></a>
@@ -9351,7 +9925,8 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
 <p><em>You must <code>free()</code> the memory allocated by this function.</em></p>
 <p class="enddd"><em>If allocation fails, <code>NULL</code> is returned</em>. </p>
 </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="colr_cat_example_8c-example.html#a14">colr_cat_example.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a id="a3580f33d058571dffd8e5ff789c49296"></a>
@@ -10294,7 +10869,7 @@ False if one of the strings is null, or the prefix isn't found.</dd></dl>
     </li>
     <!-- This actually comes *before* the "generated by" msg, because of float. -->
     <li class="footer">
-        ColrC v.0.3.7
+        ColrC v.0.4.0
     </li>
   </ul>
 </div>

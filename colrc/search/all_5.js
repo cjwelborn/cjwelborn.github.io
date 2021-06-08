@@ -11,7 +11,7 @@ var searchData=
   ['ext_5fhex_5for',['ext_hex_or',['../colr_8h.html#affaeebdd3dad2cf0d5e14a7870c1e4f6',1,'colr.h']]],
   ['ext_5finvalid',['EXT_INVALID',['../colr_8h.html#ace6501099f0501e2faa18ebfc9a74105',1,'colr.h']]],
   ['ext_5finvalid_5frange',['EXT_INVALID_RANGE',['../colr_8h.html#a29f95f31a14a8e3404651866911ea089',1,'colr.h']]],
-  ['ext_5frgb',['ext_RGB',['../colr_8h.html#a0605394ac51b9927ec4a71e99365028e',1,'ext_RGB():&#160;colr.h'],['../colr_8h.html#add3d47951e17cbf856902e11e4efa2e6',1,'ext_rgb():&#160;colr.h']]],
+  ['ext_5frgb',['ext_rgb',['../colr_8h.html#add3d47951e17cbf856902e11e4efa2e6',1,'ext_rgb():&#160;colr.h'],['../colr_8h.html#a0605394ac51b9927ec4a71e99365028e',1,'ext_RGB():&#160;colr.h']]],
   ['extended_5fnames',['extended_names',['../colr_8c.html#abffaf3629342a2b3e9cb7ea53c12c4f0',1,'colr.c']]],
   ['extended_5fnames_5flen',['extended_names_len',['../colr_8c.html#a41163e87b52c4568025714dbc6ffcbfd',1,'colr.c']]],
   ['extendedinfo',['ExtendedInfo',['../colr_8h.html#structExtendedInfo',1,'']]],

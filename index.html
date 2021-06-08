@@ -74,5 +74,25 @@
         </ul>
     </div>
 </div>
+<script type='text/javascript'>
+    class SC {
+        static mx = 3; ky = null; cnt = 0; act = null;
+        constructor(k, a) { this.ky = k; this.act = a; }
+        inc(c) { if ((c === undefined) || (c === this.ky)) this.cnt++; else this.rset(); this.rdy(); }
+        rdy() { if (this.cnt >= SC.mx) return this.act(); }
+        rset() { this.cnt = 0; }
+    }
+    let cj = {
+        lst: null,
+        scs: {
+            'f': new SC('f', ()=>{location.pathname = `${location.pathname}/files`.replace(/\/\//g, '/')}),
+        },
+        trigger: (e)=>{
+            cj.lst = e;
+            for (var k in cj.scs) cj.scs[k].inc(e.key);
+        },
+    };
+    document.onkeydown = cj.trigger;
+</script>
 </body>
 </html>
